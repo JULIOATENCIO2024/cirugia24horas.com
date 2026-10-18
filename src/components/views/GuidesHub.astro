@@ -1,0 +1,59 @@
+---
+// Hub de guías (560 por idioma) agrupadas por servicio, con buscador por texto (?q=, usado por el SearchAction).
+import Base from '../../layouts/Base.astro';
+import { type Lang } from '../../data/site';
+import { guides, procOfGuide, url, pages } from '../../lib/data';
+import { L } from '../../lib/i18n';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = L(lang);
+const es = lang === 'es';
+const mine = guides.filter((g) => g.lang === lang);
+const services = [...new Set(mine.map((g) => g.service))].sort((a, b) => mine.find((g) => g.service === a)!.category.localeCompare(mine.find((g) => g.service === b)!.category));
+const title = es ? 'Guías de cirugía: precios, recuperación y más | Cirugía 24 Horas' : 'Surgery Guides: Cost, Recovery and More | Cirugía 24 Horas';
+const description = es
+  ? `${mine.length} guías revisadas por médicos sobre 28 cirugías: qué es, precio en Perú, riesgos, recuperación, preparación y opciones para pacientes del extranjero.`
+  : `${mine.length} doctor-reviewed guides on 28 surgeries: what it is, cost in Peru, risks, recovery, preparation and options for international patients.`;
+---
+<Base lang={lang} title={title} description={description} alt={pages.guides} crumbs={[{ name: s.guides, href: pages.guides[lang] }]} type="CollectionPage">
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">{s.guides}</span>
+      <h1>{es ? 'Guías para decidir tu cirugía' : 'Guides to plan your surgery'}</h1>
+      <p class="lead">{description}</p>
+      <label class="sr" for="q">{es ? 'Buscar guía' : 'Search guides'}</label>
+      <input id="q" type="search" placeholder={es ? 'Buscar: vesícula, recuperación, precio…' : 'Search: gallbladder, recovery, cost…'} style="width:100%;max-width:560px;padding:13px 16px;border:1px solid var(--line);border-radius:999px;font:inherit">
+    </div>
+  </section>
+  {services.map((sv) => {
+    const list = mine.filter((g) => g.service === sv);
+    const proc = procOfGuide(sv);
+    return (
+      <section id={sv} data-group>
+        <div class="wrap">
+          <h2>{list[0].category}</h2>
+          <p class="sub"><a href={url.proc(proc, lang)}>{es ? `Ver precios de ${proc.es.toLowerCase()} por clínica →` : `See ${proc.en.toLowerCase()} prices by clinic →`}</a></p>
+          <ul class="links">{list.map((g) => <li data-t={`${g.title} ${g.keyword} ${g.category}`.toLowerCase()}><a href={url.guide(g, lang)}>{g.title}</a></li>)}</ul>
+        </div>
+      </section>
+    );
+  })}
+  <script is:inline>
+    (function () {
+      var q = document.getElementById('q');
+      var norm = function (t) { return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); };
+      var run = function () {
+        var v = norm(q.value.trim());
+        document.querySelectorAll('[data-group]').forEach(function (sec) {
+          var any = false;
+          sec.querySelectorAll('li[data-t]').forEach(function (li) { var ok = !v || norm(li.dataset.t).indexOf(v) >= 0; li.style.display = ok ? '' : 'none'; any = any || ok; });
+          sec.style.display = any ? '' : 'none';
+        });
+      };
+      var p = new URLSearchParams(location.search).get('q');
+      if (p) { q.value = p; run(); }
+      q.addEventListener('input', run);
+    })();
+  </script>
+</Base>

@@ -1,0 +1,88 @@
+---
+// Artículo de guía (20 por servicio, ES y EN). Los arquetipos money (precio, extranjeros, Lima por clínica y
+// por qué en Perú) muestran el comparador real de precios por clínica en S/ y US$.
+import Base from '../layouts/Base.astro';
+import PriceTable from './PriceTable.astro';
+import Faq from './Faq.astro';
+import { site, doctorBySlug, pen, usd, waLink, type Lang } from '../data/site';
+import { moneyArchetypes, specById } from '../data/catalog';
+import { guidesOf, procOfGuide, minPrice, url, pages, type Guide } from '../lib/data';
+import { orgId, physicianId } from '../lib/schema';
+import { L } from '../lib/i18n';
+
+interface Props { g: Guide }
+const { g } = Astro.props;
+const lang: Lang = g.lang;
+const s = L(lang);
+const proc = procOfGuide(g.service);
+const sp = specById(proc.specialty);
+const procName = lang === 'es' ? proc.es : proc.en;
+const money = moneyArchetypes.has(g.index);
+const lo = minPrice(proc.id);
+const rev = doctorBySlug(site.reviewer);
+const path = url.guide(g, lang);
+const pair = url.guide({ slug: g.pair }, lang === 'es' ? 'en' : 'es');
+const alt = lang === 'es' ? { es: path, en: pair } : { es: pair, en: path };
+const siblings = guidesOf(g.service, lang).filter((x) => x.slug !== g.slug);
+// "También te puede interesar": los vecinos del arquetipo + las money pages del mismo servicio.
+const near = [...siblings.filter((x) => moneyArchetypes.has(x.index)), ...siblings.filter((x) => Math.abs(x.index - g.index) <= 2)];
+const also = near.filter((x, i) => near.indexOf(x) === i).slice(0, 6);
+const title = g.title;
+const crumbs = [
+  { name: s.guides, href: pages.guides[lang] },
+  { name: g.category, href: `${pages.guides[lang]}#${g.service}` },
+  { name: g.title, href: path },
+];
+const article = {
+  '@type': 'Article',
+  '@id': `${site.url}${path}#article`,
+  headline: g.title,
+  description: g.description,
+  inLanguage: lang,
+  keywords: g.keyword,
+  articleSection: g.category,
+  datePublished: site.fx.date,
+  dateModified: site.fx.date,
+  author: { '@id': orgId },
+  publisher: { '@id': orgId },
+  reviewedBy: { '@id': physicianId(site.reviewer) },
+  about: { '@type': 'MedicalProcedure', name: procName },
+  mainEntityOfPage: `${site.url}${path}`,
+  image: `${site.url}/og.jpg`,
+};
+---
+<Base lang={lang} title={title} description={g.description} alt={alt} crumbs={crumbs} faqs={g.faqs} main={[article]} waMsg={s.waProc(procName)}>
+  <article class="wrap prose" style="padding-top:18px;padding-bottom:10px">
+    <span class="kicker">{g.category}</span>
+    <h1>{g.title}</h1>
+    <p class="answer"><b>{s.tldr}:</b> {g.tldr}</p>
+    <Fragment set:html={g.bodyHtml} />
+    <div class="cta" style="margin-top:20px">
+      <a class="btn btn-wa" href={waLink(s.waProc(procName))} data-cta="whatsapp" target="_blank" rel="noopener">{lang === 'es' ? 'Consultar por WhatsApp' : 'Ask on WhatsApp'}</a>
+      <a class="btn btn-out" href={url.proc(proc, lang)}>{lang === 'es' ? `${procName}: desde ${pen(lo)}` : `${procName}: from ${usd(lo)}`}</a>
+    </div>
+    <p class="byline">{s.reviewed} <a href={url.doctor(rev.slug, lang)}>{rev.name}</a> · CMP {rev.cmp} · RNE {rev.rne} · {s.updated}: {site.fx.date}. {lang === 'es' ? 'Contenido educativo; no reemplaza la consulta.' : 'Educational content; it does not replace a consultation.'} <a href={pages.editorial[lang]}>{lang === 'es' ? 'Política editorial' : 'Editorial policy'}</a></p>
+  </article>
+
+  {money && (
+    <section>
+      <div class="wrap">
+        <h2>{lang === 'es' ? `Precio de ${procName.toLowerCase()} por clínica en Lima` : `${procName} cost by clinic in Lima, Peru`}</h2>
+        <PriceTable proc={proc.id} lang={lang} compact />
+      </div>
+    </section>
+  )}
+
+  <Faq faqs={g.faqs} title={s.faq} />
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>{s.alsoRead}</h2>
+      <ul class="links">
+        <li><a href={url.proc(proc, lang)}>{procName}<small>{lang === 'es' ? `Precios por clínica · ${sp.es}` : `Prices by clinic · ${sp.en}`}</small></a></li>
+        {also.map((x) => <li><a href={url.guide(x, lang)}>{x.title}</a></li>)}
+        <li><a href={pages.international[lang]}>{s.international}<small>{lang === 'es' ? 'Viaje, alojamiento y seguimiento' : 'Travel, lodging and follow-up'}</small></a></li>
+      </ul>
+    </div>
+  </section>
+</Base>

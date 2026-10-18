@@ -1,0 +1,70 @@
+---
+// Contacto: el formulario no guarda datos; abre WhatsApp con lo escrito (evento cotizacion_enviada).
+import Base from '../../layouts/Base.astro';
+import { site, waLink, telLink, type Lang } from '../../data/site';
+import { procedures } from '../../data/catalog';
+import { pages } from '../../lib/data';
+import { L } from '../../lib/i18n';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = L(lang);
+const es = lang === 'es';
+const title = es ? 'Contacto y cotización gratis | Cirugía 24 Horas' : 'Contact and Free Quote | Cirugía 24 Horas';
+const description = es
+  ? `Escríbenos por WhatsApp al ${site.phoneDisplay} o deja tus datos para tu cotización sin costo. Sede: ${site.address}, ${site.district}, Lima.`
+  : `Message us on WhatsApp at ${site.phoneDisplay} or send your details for a free quote. Office: ${site.address}, ${site.district}, Lima, Peru.`;
+const maps = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${site.address}, ${site.district}, Lima, Peru`)}`;
+---
+<Base lang={lang} title={title} description={description} alt={pages.contact} crumbs={[{ name: s.contact, href: pages.contact[lang] }]} type="ContactPage" reviewed={false}>
+  <section class="hero">
+    <div class="wrap split">
+      <div>
+        <span class="kicker">{s.contact}</span>
+        <h1>{es ? 'Cotiza tu cirugía sin costo' : 'Get your free surgery quote'}</h1>
+        <p class="lead">{es ? 'Respondemos por WhatsApp, teléfono o correo. Atención en español e inglés.' : 'We reply on WhatsApp, by phone or email, in English and Spanish.'}</p>
+        <ul class="links" style="grid-template-columns:1fr">
+          <li><a href={waLink(s.waGeneric)} data-cta="whatsapp" target="_blank" rel="noopener">WhatsApp<small>{site.phoneDisplay}</small></a></li>
+          <li><a href={telLink()} data-cta="call">{s.call}<small>{site.phoneDisplay}</small></a></li>
+          <li><a href={`mailto:${site.email}`} data-cta="email">Email<small>{site.email}</small></a></li>
+          <li><a href={maps} target="_blank" rel="noopener">{es ? 'Sede de coordinación' : 'Coordination office'}<small>{site.address}, {site.district}, Lima · {site.hours[lang]}</small></a></li>
+        </ul>
+      </div>
+      <form class="card" id="quote" action={`https://wa.me/${site.whatsapp}`} data-lang={lang}>
+        <h3>{es ? 'Solicitar cotización' : 'Request a quote'}</h3>
+        <label>{es ? 'Nombre' : 'Name'}<br><input name="nombre" required autocomplete="name" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;font:inherit"></label>
+        <label>{es ? 'País y ciudad' : 'Country and city'}<br><input name="pais" required style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;font:inherit"></label>
+        <label>{es ? 'Cirugía' : 'Procedure'}<br>
+          <select name="cirugia" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;font:inherit">
+            {procedures.map((p) => <option>{es ? p.es : p.en}</option>)}
+            <option>{es ? 'Otra / no sé' : 'Other / not sure'}</option>
+          </select>
+        </label>
+        <label>{es ? 'Comentario (opcional)' : 'Comment (optional)'}<br><textarea name="nota" rows="3" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;font:inherit"></textarea></label>
+        <label style="font-size:13px;display:flex;gap:6px;align-items:flex-start"><input type="checkbox" required style="margin-top:4px">{es ? <>Acepto la <a href={pages.privacy.es}>política de privacidad</a> y que me contacten por WhatsApp.</> : <>I accept the <a href={pages.privacy.en}>privacy policy</a> and to be contacted on WhatsApp.</>}</label>
+        <button class="btn btn-wa" type="submit">{es ? 'Enviar por WhatsApp' : 'Send on WhatsApp'}</button>
+        <p style="font-size:12.5px">{es ? 'No envíes datos sensibles por este formulario; el detalle médico lo compartes luego por WhatsApp.' : 'Do not include sensitive data here; you can share medical details later on WhatsApp.'}</p>
+      </form>
+    </div>
+  </section>
+  <section id="libro-de-reclamaciones" class="alt">
+    <div class="wrap prose">
+      <h2>{es ? 'Libro de Reclamaciones' : 'Complaints book (Libro de Reclamaciones)'}</h2>
+      <p>{es
+        ? `Conforme al Código de Protección y Defensa del Consumidor, puedes registrar un reclamo o queja escribiendo a ${site.email} o por WhatsApp; te enviamos la hoja de reclamación y la constancia de registro. También está disponible en físico en nuestra sede.`
+        : `Under Peru’s Consumer Protection Code you can file a claim or complaint by writing to ${site.email} or on WhatsApp; we will send you the complaint form and a registration receipt. A physical book is available at our office.`}</p>
+    </div>
+  </section>
+  <script is:inline>
+    document.getElementById('quote').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = e.target, es = f.dataset.lang === 'es';
+      var msg = (es ? 'Hola, quiero una cotización. Nombre: ' : 'Hello, I would like a quote. Name: ') + f.nombre.value +
+        (es ? ' · País/ciudad: ' : ' · Country/city: ') + f.pais.value + (es ? ' · Cirugía: ' : ' · Procedure: ') + f.cirugia.value +
+        (f.nota.value ? ' · ' + f.nota.value : '');
+      if (window.gtag) gtag('event', 'cotizacion_enviada', { procedure: f.cirugia.value, page_language: f.dataset.lang });
+      if (window.gtag && !es) gtag('event', 'lead_internacional', { method: 'form' });
+      window.open(f.action + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    });
+  </script>
+</Base>

@@ -1,0 +1,52 @@
+---
+// Artículo del blog migrado del WordPress: misma URL, mismo título SEO y mismo contenido (migración fiel).
+import Base from '../layouts/Base.astro';
+import { site, pen, waLink } from '../data/site';
+import { procedures } from '../data/catalog';
+import { blogPosts, minPrice, url } from '../lib/data';
+import { orgId, physicianId } from '../lib/schema';
+
+interface Props { post: (typeof blogPosts)[number] }
+const { post } = Astro.props;
+const text = post.html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+const description = post.description || (text.length > 158 ? text.slice(0, 155).replace(/\s+\S*$/, '') + '…' : text);
+const title = (post.seoTitle || post.title).replace(/\s+–\s+Cirugía 24 horas$/i, ' | Cirugía 24 Horas');
+
+// Procedimiento relacionado por palabra clave del título (enlace interno a su página de precios).
+const keys: [RegExp, string][] = [
+  [/rinoplast/i, 'rinoplastia'], [/lipo(escultura|succi)/i, 'lipoescultura'], [/abdominoplast/i, 'lipoescultura'],
+  [/v[aá]rice|varicos/i, 'cirugia-de-varices-bilateral'], [/vasectom/i, 'vasectomia'], [/ect[oó]pico/i, 'cirugia-de-embarazo-ectopico'],
+  [/pr[oó]stata/i, 'prostata'], [/c[aá]lculos renales/i, 'calculos-renales'], [/ap[eé]ndic/i, 'apendice'], [/cpre/i, 'cpre'],
+  [/prolapso/i, 'cirugia-de-prolapso-uterino'], [/legrado/i, 'legrado-ginecologico'], [/mamas|mastectom/i, 'cirugia-de-aumento-de-mamas'],
+  [/quiste.*ovario|ovario/i, 'histerectomia'], [/circuncisi|verruga|vph/i, 'vasectomia'],
+];
+const rel = keys.find(([re]) => re.test(post.title))?.[1];
+const proc = rel ? procedures.find((p) => p.id === rel) : undefined;
+const posting = {
+  '@type': 'BlogPosting',
+  '@id': `${site.url}${post.url}#article`,
+  headline: post.title,
+  description,
+  inLanguage: 'es',
+  datePublished: post.date,
+  dateModified: post.modified || post.date,
+  author: { '@id': orgId },
+  publisher: { '@id': orgId },
+  reviewedBy: { '@id': physicianId(site.reviewer) },
+  mainEntityOfPage: `${site.url}${post.url}`,
+  ...(post.image && { image: `${site.url}${post.image}` }),
+};
+---
+<Base lang="es" title={title} description={description} crumbs={[{ name: 'Blog', href: '/blog/' }, { name: post.title, href: post.url }]} main={[posting]}>
+  <article class="wrap prose" style="padding-top:18px;padding-bottom:30px">
+    <h1>{post.title}</h1>
+    {post.image && <img src={post.image} alt={post.title} loading="eager">}
+    <Fragment set:html={post.html} />
+    {proc && (
+      <div class="info">
+        <b>{proc.es} en Lima:</b> desde {pen(minPrice(proc.id))} según la clínica. <a href={url.proc(proc, 'es')}>Ver precios por clínica</a> o <a href={waLink(`Hola, leí "${post.title}" y quiero información sobre ${proc.es}.`)} data-cta="whatsapp" target="_blank" rel="noopener">escríbenos por WhatsApp</a>.
+      </div>
+    )}
+    <p class="byline">Publicado: {post.date.slice(0, 10)} · Actualizado: {(post.modified || post.date).slice(0, 10)} · Contenido educativo; no reemplaza la consulta médica. <a href="/legal/politica-editorial/">Política editorial</a></p>
+  </article>
+</Base>

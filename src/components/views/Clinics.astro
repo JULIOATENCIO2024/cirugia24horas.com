@@ -1,0 +1,108 @@
+---
+// Directorio de clínicas (sin `id`) o ficha de una clínica de la red (con `id`).
+import Base from '../../layouts/Base.astro';
+import { site, clinics, clinicById, pen, usd, waLink, type Lang } from '../../data/site';
+import { procedures } from '../../data/catalog';
+import { priceRows, url, pages } from '../../lib/data';
+import { L } from '../../lib/i18n';
+
+interface Props { lang: Lang; id?: string }
+const { lang, id } = Astro.props;
+const s = L(lang);
+const es = lang === 'es';
+const c = id ? clinicById(id) : null;
+const main = clinics.filter((x) => x.main);
+const offers = c ? procedures.map((p) => ({ p, r: priceRows(p.id, lang).find((r) => r.clinic === c.id) })).filter((x) => x.r) : [];
+const path = c ? url.clinic(c.id, lang) : pages.clinics[lang];
+const alt = c ? { es: url.clinic(c.id, 'es'), en: url.clinic(c.id, 'en') } : pages.clinics;
+const title = c
+  ? (es ? `${c.name} (${c.district}): precios de cirugía | Cirugía 24 Horas` : `${c.name}, Lima: Surgery Prices | Cirugía 24 Horas`)
+  : (es ? 'Clínicas de la red en Lima: cuál elegir | Cirugía 24 Horas' : 'Our Partner Clinics in Lima, Peru | Cirugía 24 Horas');
+const description = c
+  ? (es ? `${c.name} en ${c.district}, Lima: ${c.profile.es} Precios de ${offers.length} cirugías en soles y dólares.` : `${c.name} in ${c.district}, Lima: ${c.profile.en} Prices for ${offers.length} surgeries in US dollars and soles.`).slice(0, 160)
+  : (es ? 'Cinco clínicas en Lima con distinto nivel de costo, tiempo de respuesta e infraestructura: Raimondi, Santa Lucía, Gastroenterológica, Higuereta y Del Inca.' : 'Five clinics in Lima with different price levels, waiting times and facilities: Raimondi, Santa Lucía, Gastroenterológica, Higuereta and Del Inca.');
+const crumbs = [{ name: s.clinics, href: pages.clinics[lang] }, ...(c ? [{ name: c.name, href: path }] : [])];
+const node = c && {
+  '@type': 'MedicalClinic',
+  '@id': `${site.url}${url.clinic(c.id, 'es')}#clinic`,
+  name: c.name,
+  description: c.profile[lang],
+  image: `${site.url}${c.photo}`,
+  address: { '@type': 'PostalAddress', addressLocality: c.district, addressRegion: 'Lima', addressCountry: 'PE' },
+  memberOf: { '@id': `${site.url}/#organization` },
+  availableService: offers.map(({ p }) => ({ '@type': 'MedicalProcedure', name: es ? p.es : p.en })),
+};
+---
+<Base lang={lang} title={title} description={description} alt={alt} crumbs={crumbs} main={node ? [node] : undefined} type={c ? 'MedicalWebPage' : 'CollectionPage'} waMsg={c ? (es ? `Hola, quiero cotizar una cirugía en ${c.name}.` : `Hello, I would like a quote for surgery at ${c.name}.`) : undefined}>
+  <section class="hero">
+    <div class="wrap split">
+      <div>
+        <span class="kicker">{c ? c.level[lang] : s.clinics}</span>
+        <h1>{c ? `${c.name} · ${c.district}` : (es ? 'Cinco clínicas, un mismo equipo quirúrgico' : 'Five clinics, one surgical team')}</h1>
+        <p class="lead">{c ? c.profile[lang] : (es
+          ? 'Cada clínica tiene un perfil distinto: nivel de costo, tiempo de respuesta, infraestructura, complejidad de casos y comodidad. Las clínicas se ajustan a tus necesidades, no al revés.'
+          : 'Each clinic has a different profile: price level, waiting time, facilities, case complexity and comfort. The clinics adapt to your needs, not the other way around.')}</p>
+        {c && <p class="answer"><b>{es ? 'Para ti si' : 'Right for you if'}:</b> {c.fit[lang]}</p>}
+        {c && <div class="cta"><a class="btn btn-wa" href={waLink(es ? `Hola, quiero cotizar una cirugía en ${c.name}.` : `Hello, I would like a quote for surgery at ${c.name}.`)} data-cta="whatsapp" target="_blank" rel="noopener">{s.quote}</a></div>}
+      </div>
+      {c?.photo && <img src={c.photo} alt={c.name} width="480" height="328" style="border-radius:18px;width:100%;object-fit:cover">}
+    </div>
+  </section>
+
+  {c ? (
+    <>
+      <section>
+        <div class="wrap">
+          <h2>{es ? 'Qué ofrece' : 'What it offers'}</h2>
+          <ul class="prose" style="padding-left:22px">{c.bullets[lang].map((b) => <li>{b}</li>)}</ul>
+        </div>
+      </section>
+      <section class="alt">
+        <div class="wrap">
+          <h2>{es ? `Precios de cirugía en ${c.name}` : `Surgery prices at ${c.name}`}</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th scope="col">{es ? 'Procedimiento' : 'Procedure'}</th><th scope="col">{s.price}</th><th scope="col">{s.preop}</th><th scope="col">{s.room}</th></tr></thead>
+              <tbody>
+                {offers.map(({ p, r }) => (
+                  <tr>
+                    <td><a href={url.proc(p, lang)}><b>{es ? p.es : p.en}</b></a></td>
+                    <td class="pr">{es ? pen(r!.price) : usd(r!.price)}<small>{es ? `≈ ${usd(r!.price)}` : pen(r!.price)}</small></td>
+                    <td>{r!.preop || '—'}</td>
+                    <td>{r!.room || '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="note">{s.fxNote(site.fx.usd, site.fx.date)} {s.priceNote}</p>
+        </div>
+      </section>
+    </>
+  ) : (
+    <section>
+      <div class="wrap">
+        <div class="grid three">
+          {main.map((x) => (
+            <div class="card">
+              {x.photo && <img src={x.photo} alt={x.name} width="234" height="160" loading="lazy" style="border-radius:12px;width:100%;aspect-ratio:3/2;object-fit:cover">}
+              <span class="tag">{x.level[lang]}</span>
+              <h3><a href={url.clinic(x.id, lang)}>{x.name}</a></h3>
+              <p>{x.district}, Lima · {x.profile[lang]}</p>
+              <p><b>{es ? 'Para ti si:' : 'Right for you if:'}</b> {x.fit[lang]}</p>
+              <a class="more" href={url.clinic(x.id, lang)}>{s.readMore} →</a>
+            </div>
+          ))}
+        </div>
+        <div class="info">{es
+          ? 'Algunas especialidades suman sedes especializadas (urológica, traumatológica, ginecológica, de cirugía plástica, de cabeza y cuello y cardiovascular). Las verás en la tabla de precios de cada procedimiento.'
+          : 'Some specialties add specialized centers (urology, orthopedics, gynecology, plastic surgery, head and neck and cardiovascular). You will see them in the price table of each procedure.'}</div>
+        <h2 style="margin-top:28px">{es ? 'Cómo seleccionamos las clínicas' : 'How we select our clinics'}</h2>
+        <div class="steps four">
+          {(es ? [['Equipo médico certificado', 'Cirujanos con credenciales verificadas y experiencia clínica relevante.'], ['Protocolos quirúrgicos validados', 'Procesos pre, intra y postoperatorios alineados con estándares clínicos.'], ['Infraestructura adecuada', 'Quirófanos equipados, áreas postoperatorias y respuesta ante imprevistos.'], ['Atención al paciente', 'Personal capacitado en comunicación clara en todas las fases.']]
+                : [['Certified medical team', 'Surgeons with verified credentials and relevant clinical experience.'], ['Validated surgical protocols', 'Pre-, intra- and post-operative processes aligned with clinical standards.'], ['Adequate facilities', 'Equipped operating rooms, recovery areas and response to the unexpected.'], ['Patient care standards', 'Staff trained in clear communication at every stage.']]).map(([b, t]) => <div class="step"><div><b>{b}</b><p>{t}</p></div></div>)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>

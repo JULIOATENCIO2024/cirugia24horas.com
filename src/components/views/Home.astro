@@ -1,0 +1,161 @@
+---
+import Base from '../../layouts/Base.astro';
+import Doctors from '../Doctors.astro';
+import Faq from '../Faq.astro';
+import Youtube from '../Youtube.astro';
+import { site, clinics, pen, usd, waLink, type Lang } from '../../data/site';
+import { procedures, specialties } from '../../data/catalog';
+import { minPrice, url, pages } from '../../lib/data';
+import { L } from '../../lib/i18n';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = L(lang);
+const es = lang === 'es';
+const main = clinics.filter((c) => c.main);
+const featured = ['vesicula', 'manga-gastrica', 'cirugia-de-hernia-inguinal', 'protesis-de-rodilla', 'protesis-de-cadera', 'tratamiento-de-ginecomastia', 'prostata', 'rinoplastia'];
+const top = featured.map((id) => procedures.find((p) => p.id === id)!);
+const lowest = Math.min(...procedures.map((p) => minPrice(p.id)));
+const price = (n: number) => (es ? pen(n) : usd(n));
+const alt = (n: number) => (es ? `≈ ${usd(n)}` : pen(n));
+
+const title = es ? 'Cirugía en Lima, Perú: precios por clínica | Cirugía 24 Horas' : 'Surgery in Peru: Affordable Prices by Clinic | Cirugía 24 Horas';
+const description = es
+  ? 'Compara precios de más de 30 cirugías en 5 clínicas de Lima, en soles y dólares. Mismo equipo quirúrgico, evaluación sin costo y atención a pacientes del extranjero.'
+  : 'Compare the cost of 30+ surgeries at 5 clinics in Lima, Peru, in US dollars and soles. Same surgical team, free evaluation, full support for international patients.';
+const faqs = es ? [
+  { q: '¿Qué hace exactamente Cirugía 24 Horas?', a: 'Coordinamos cirugías a través de una red de cinco clínicas en Lima. Evaluamos tu diagnóstico, te orientamos sobre las alternativas que aplican a tu caso, gestionamos la coordinación con el cirujano y la clínica que elijas, y damos seguimiento postoperatorio.' },
+  { q: '¿El cirujano cambia según la clínica?', a: 'No. Nuestros especialistas operan en cualquiera de las clínicas de la red. La diferencia está en el entorno hospitalario: ubicación, tipo de habitación, infraestructura y costo.' },
+  { q: '¿Tiene costo la evaluación inicial?', a: 'No. La evaluación inicial de tu caso no tiene costo. Pagas cuando decides operarte y eliges la clínica; el presupuesto se entrega cerrado y por escrito antes de proceder.' },
+  { q: '¿Atienden a pacientes del extranjero?', a: 'Sí. Revisamos tu caso a distancia, te enviamos la cotización por clínica en soles y dólares, y coordinamos fechas, traslados, alojamiento y el seguimiento cuando vuelves a tu país.' },
+  { q: '¿Cómo se garantiza la seguridad de las clínicas?', a: 'Cada clínica pasa por una evaluación previa de cuatro criterios: equipo médico certificado, protocolos quirúrgicos validados, infraestructura adecuada y estándares de atención al paciente. Se mantiene en la red mientras los cumpla.' },
+  { q: '¿Qué incluye el seguimiento postoperatorio?', a: 'Coordinamos los controles con el cirujano que te operó y mantenemos disponibilidad para consultas durante tu recuperación, hasta el alta médica definitiva.' },
+] : [
+  { q: 'What does Cirugía 24 Horas do?', a: 'We coordinate surgery through a network of five clinics in Lima, Peru. We review your diagnosis, explain the options that apply to your case, coordinate the surgeon and the clinic you choose, and follow up after surgery.' },
+  { q: 'Does the surgeon change depending on the clinic?', a: 'No. Our specialists operate at any clinic in the network. What changes is the hospital setting: location, room type, facilities and price.' },
+  { q: 'Is the initial evaluation free?', a: 'Yes. Reviewing your case costs nothing. You pay only when you decide to have surgery and choose a clinic, and you receive a fixed, written quote before anything is scheduled.' },
+  { q: 'How does it work if I live outside Peru?', a: 'Send your medical records on WhatsApp. We review your case remotely, send a quote by clinic in US dollars and soles, and coordinate dates, airport transfers, lodging and remote follow-up once you are home.' },
+  { q: 'How do you ensure the clinics are safe?', a: 'Every clinic is evaluated on four criteria before joining: certified medical team, validated surgical protocols, adequate facilities and patient-care standards. It stays in the network only while it meets them.' },
+  { q: 'Why are surgery prices in Peru lower?', a: 'Medical, staff and hospital costs in Peru are a fraction of those in the US or Europe. The same procedures are performed by licensed specialists, and you choose the clinic level that fits your budget.' },
+];
+---
+<Base lang={lang} title={title} description={description} alt={pages.home} faqs={faqs} type="WebPage" reviewed={false}>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">{es ? 'Coordinación quirúrgica · Lima, Perú' : 'Global Surgery · Lima, Peru'}</span>
+      <h1>{es ? <>Tu cirugía en Lima, <span class="hl">en la clínica que se ajusta a tu presupuesto</span></> : <>Surgery in Peru: <span class="hl">specialized, timely and affordable</span></>}</h1>
+      <p class="lead">{es
+        ? 'Mismo equipo de cirujanos, cinco clínicas de distinto nivel. Compara precios en soles y dólares, elige la sede y te acompañamos de principio a fin.'
+        : 'One surgical team, five clinics at different price levels. Compare prices in US dollars and soles, choose your clinic, and we coordinate everything from your first message to your follow-up at home.'}</p>
+      <p class="answer"><b>{s.tldr}:</b> {es
+        ? `Cirugía 24 Horas coordina más de 30 cirugías en 5 clínicas de Lima, con precios desde ${pen(lowest)} (≈ ${usd(lowest)}). La evaluación inicial es sin costo y recibes una cotización cerrada por escrito.`
+        : `Cirugía 24 Horas coordinates 30+ surgeries at 5 clinics in Lima, Peru, with prices from ${usd(lowest)} (${pen(lowest)}). The initial evaluation is free and you receive a fixed written quote before you travel.`}</p>
+      <div class="cta">
+        <a class="btn btn-wa" href={waLink(s.waGeneric)} data-cta="whatsapp" target="_blank" rel="noopener">{es ? 'Cotizar por WhatsApp' : 'Get a free quote on WhatsApp'}</a>
+        <a class="btn btn-out" href={pages.prices[lang]}>{es ? 'Ver todos los precios' : 'See all prices'}</a>
+      </div>
+      <div class="chips">
+        <span><b>5</b> {es ? 'clínicas en Lima' : 'clinics in Lima'}</span>
+        <span><b>30+</b> {es ? 'cirugías' : 'procedures'}</span>
+        <span><b>{es ? 'Sin costo' : 'Free'}</b> {es ? 'evaluación inicial' : 'initial evaluation'}</span>
+        <span><b>ES · EN</b> {es ? 'atención en dos idiomas' : 'Spanish and English support'}</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>{es ? 'Cirugías más consultadas y su precio' : 'Most requested surgeries and their cost'}</h2>
+      <p class="sub">{es ? 'Precio desde la clínica de menor costo de la red. En cada página ves la tabla completa por clínica.' : 'Price from the lowest-cost clinic in the network. Each page shows the full table by clinic.'}</p>
+      <div class="grid four">
+        {top.map((p) => (
+          <div class="card">
+            <span class="tag">{es ? specialties.find((x) => x.id === p.specialty)!.es : specialties.find((x) => x.id === p.specialty)!.en}</span>
+            <h3><a href={url.proc(p, lang)}>{es ? p.es : p.en}</a></h3>
+            <div class="price-from">{s.from} {price(minPrice(p.id))}<small>{alt(minPrice(p.id))}</small></div>
+            <a class="more" href={url.proc(p, lang)}>{s.seePrice} →</a>
+          </div>
+        ))}
+      </div>
+      <p style="margin-top:16px"><a class="btn btn-out" href={pages.specialties[lang]}>{s.all}</a></p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>{es ? 'El cirujano es el mismo. La clínica se elige según tu caso.' : 'Same surgeon. You choose the clinic.'}</h2>
+      <p class="sub">{es
+        ? 'Lo que cambia entre una opción y otra no es el equipo médico: es el entorno hospitalario, el costo, los tiempos y la infraestructura.'
+        : 'What changes between options is not the medical team: it is the hospital setting, the price, the timing and the facilities.'}</p>
+      <div class="grid three">
+        {main.map((c) => (
+          <div class="card">
+            <span class="tag">{c.level[lang]}</span>
+            <h3><a href={url.clinic(c.id, lang)}>{c.name}</a></h3>
+            <p>{c.district}, Lima · {c.profile[lang]}</p>
+            <p><b>{es ? 'Para ti si:' : 'Right for you if:'}</b> {c.fit[lang]}</p>
+            <a class="more" href={url.clinic(c.id, lang)}>{s.readMore} →</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>{s.how}</h2>
+      <div class="steps four">
+        {(es ? [
+          ['Escríbenos', 'Cuéntanos tu diagnóstico y envía tus exámenes por WhatsApp.'],
+          ['Evaluación sin costo', 'El especialista revisa tu caso y confirma qué cirugía corresponde.'],
+          ['Cotización por clínica', 'Recibes el precio cerrado de cada sede, en soles y dólares.'],
+          ['Cirugía y seguimiento', 'Coordinamos la fecha, la clínica y tus controles hasta el alta.'],
+        ] : [
+          ['Message us', 'Tell us your diagnosis and send your medical records on WhatsApp.'],
+          ['Free evaluation', 'The specialist reviews your case and confirms the right procedure.'],
+          ['Quote by clinic', 'You receive a fixed price for each clinic, in US dollars and soles.'],
+          ['Surgery and follow-up', 'We coordinate dates, clinic, transfers and follow-up until discharge.'],
+        ]).map(([b, t]) => <div class="step"><div><b>{b}</b><p>{t}</p></div></div>)}
+      </div>
+      <p style="margin-top:16px"><a href={pages.how[lang]}>{es ? 'Ver el proceso completo →' : 'See the full process →'}</a></p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap split">
+      <div class="prose">
+        <h2>{es ? '¿Vives fuera del Perú?' : 'Traveling to Peru for surgery'}</h2>
+        <p>{es
+          ? 'Pacientes de Estados Unidos, Europa y Latinoamérica se operan en Lima por el ahorro frente a sus países y por la atención de especialistas. Te ayudamos con la evaluación a distancia, la cotización, las fechas, los traslados y el alojamiento.'
+          : 'Patients from the United States, Canada, Europe and Latin America choose Lima for the savings compared with their home countries and for care by licensed specialists. We help with the remote evaluation, your quote, dates, airport transfers, lodging and remote follow-up.'}</p>
+        <p style="margin-top:14px"><a class="btn btn-main" href={pages.international[lang]}>{s.international}</a></p>
+      </div>
+      <div><Youtube /></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>{es ? 'Nuestros especialistas' : 'Our specialists'}</h2>
+      <p class="sub">{es ? 'Médicos colegiados (CMP) con registro de especialista (RNE).' : 'Doctors licensed by the Peruvian Medical Association (CMP) with specialist registration (RNE).'}</p>
+      <Doctors lang={lang} />
+      <p style="margin-top:16px"><a href={pages.doctors[lang]}>{es ? 'Ver todo el equipo →' : 'Meet the whole team →'}</a></p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>{s.specialties}</h2>
+      <div class="grid three">
+        {specialties.map((x) => (
+          <div class="card">
+            <h3><a href={url.spec(x.id, lang)}>{es ? x.es : x.en}</a></h3>
+            <p>{es ? x.introEs : x.introEn}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Faq faqs={faqs} title={s.faq} />
+</Base>

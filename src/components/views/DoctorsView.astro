@@ -1,0 +1,68 @@
+---
+// Directorio de doctores (sin `slug`) o ficha (con `slug`). Fichas sin CMP/RNE confirmados van con noindex.
+import Base from '../../layouts/Base.astro';
+import Doctors from '../Doctors.astro';
+import { doctors, doctorBySlug, waLink, type Lang } from '../../data/site';
+import { procedures, specialties } from '../../data/catalog';
+import { url, pages } from '../../lib/data';
+import { physician } from '../../lib/schema';
+import { L } from '../../lib/i18n';
+
+interface Props { lang: Lang; slug?: string }
+const { lang, slug } = Astro.props;
+const s = L(lang);
+const es = lang === 'es';
+const d = slug ? doctorBySlug(slug) : null;
+const path = d ? url.doctor(d.slug, lang) : pages.doctors[lang];
+const alt = d ? { es: url.doctor(d.slug, 'es'), en: url.doctor(d.slug, 'en') } : pages.doctors;
+const areas = d ? specialties.filter((x) => d.areas.includes(x.id)) : [];
+const title = d
+  ? `${d.name}${d.specialty ? ` · ${d.specialty[lang]}` : ''} | Cirugía 24 Horas`
+  : (es ? 'Doctores y cirujanos en Lima (CMP/RNE) | Cirugía 24 Horas' : 'Our Surgeons in Lima, Peru (licensed) | Cirugía 24 Horas');
+const description = d
+  ? (es ? `${d.name}${d.specialty ? `, ${d.specialty.es.toLowerCase()}` : ''}${d.cmp ? ` (CMP ${d.cmp}${d.rne ? `, RNE ${d.rne}` : ''})` : ''}. Opera en las clínicas de la red Cirugía 24 Horas en Lima.`
+        : `${d.name}${d.specialty ? `, ${d.specialty.en.toLowerCase()}` : ''}${d.cmp ? ` (CMP ${d.cmp}${d.rne ? `, RNE ${d.rne}` : ''})` : ''}. Operates at the Cirugía 24 Horas partner clinics in Lima, Peru.`)
+  : (es ? 'Conoce a los cirujanos de la red: médicos colegiados en el Colegio Médico del Perú con registro de especialista.' : 'Meet the network surgeons: doctors licensed by the Peruvian Medical Association with specialist registration.');
+const crumbs = [{ name: s.doctors, href: pages.doctors[lang] }, ...(d ? [{ name: d.name, href: path }] : [])];
+---
+<Base lang={lang} title={title} description={description} alt={alt} crumbs={crumbs} main={d ? [physician(d.slug, lang)] : undefined} type={d ? 'ProfilePage' : 'CollectionPage'} reviewed={!d} noindex={!!d && !d.confirmed}>
+  <section class="hero">
+    <div class="wrap">
+      {d ? (
+        <div class="split">
+          <div>
+            <span class="kicker">{d.specialty ? d.specialty[lang] : s.doctors}</span>
+            <h1>{d.name}</h1>
+            {d.cmp && <p class="lead">CMP {d.cmp}{d.rne && ` · RNE ${d.rne}`} — <a href="https://www.cmp.org.pe/conoce-a-tu-medico/" target="_blank" rel="noopener">{es ? 'verificar en el Colegio Médico del Perú' : 'verify with the Peruvian Medical Association'}</a></p>}
+            <p class="lead">{es ? 'Opera en las clínicas de la red Cirugía 24 Horas en Lima, con el mismo protocolo en todas las sedes.' : 'Operates at the Cirugía 24 Horas partner clinics in Lima, with the same protocol at every clinic.'}</p>
+            <div class="cta"><a class="btn btn-wa" href={waLink(es ? `Hola, quiero una evaluación con ${d.name}.` : `Hello, I would like an evaluation with ${d.name}.`)} data-cta="whatsapp" target="_blank" rel="noopener">{es ? 'Agendar evaluación' : 'Book an evaluation'}</a></div>
+          </div>
+          <img src={d.photo} alt={d.name} width="270" height="270" style="border-radius:18px;max-width:270px">
+        </div>
+      ) : (
+        <>
+          <span class="kicker">{s.doctors}</span>
+          <h1>{es ? 'Nuestro equipo de cirujanos' : 'Our surgical team'}</h1>
+          <p class="lead">{description}</p>
+        </>
+      )}
+    </div>
+  </section>
+  {d ? (
+    areas.length > 0 && (
+      <section>
+        <div class="wrap">
+          <h2>{es ? 'Procedimientos' : 'Procedures'}</h2>
+          <ul class="links">{procedures.filter((p) => d.areas.includes(p.specialty)).map((p) => <li><a href={url.proc(p, lang)}>{es ? p.es : p.en}</a></li>)}</ul>
+        </div>
+      </section>
+    )
+  ) : (
+    <section>
+      <div class="wrap">
+        <Doctors lang={lang} all />
+        <p class="note">{es ? 'Los números de colegiatura (CMP) y de registro de especialista (RNE) pueden verificarse en el portal del Colegio Médico del Perú.' : 'License (CMP) and specialist registration (RNE) numbers can be verified on the Peruvian Medical Association website.'}</p>
+      </div>
+    </section>
+  )}
+</Base>

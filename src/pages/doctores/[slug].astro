@@ -1,0 +1,6 @@
+---
+import V from '../../components/views/DoctorsView.astro';
+import { doctors } from '../../data/site';
+export function getStaticPaths() { return doctors.map((d) => ({ params: { slug: d.slug } })); }
+---
+<V lang="es" slug={Astro.params.slug} />

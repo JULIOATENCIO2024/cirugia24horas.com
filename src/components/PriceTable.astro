@@ -1,0 +1,50 @@
+---
+// Comparador de precios por clínica (el activo único del BUILD): soles publicados + dólares referenciales.
+import { priceRows } from '../lib/data';
+import { site, pen, usd, waLink, type Lang } from '../data/site';
+import { L } from '../lib/i18n';
+import { procById } from '../data/catalog';
+
+interface Props { proc: string; lang: Lang; compact?: boolean }
+const { proc, lang, compact = false } = Astro.props;
+const s = L(lang);
+const p = procById(proc);
+const name = lang === 'es' ? p.es : p.en;
+const rows = priceRows(proc, lang);
+const cheapest = rows[0]?.price;
+const first = (n: number) => (lang === 'es' ? pen(n) : usd(n));
+const second = (n: number) => (lang === 'es' ? `≈ ${usd(n)}` : pen(n));
+const wa = (clinic: string) => waLink(lang === 'es' ? `Hola, quiero una cotización para ${p.es} en ${clinic}.` : `Hello, I would like a quote for ${p.en} at ${clinic} in Lima, Peru.`);
+---
+<div class="table-wrap">
+  <table>
+    <caption class="sr">{lang === 'es' ? `Precio de ${name} por clínica en Lima` : `${name} cost by clinic in Lima, Peru`}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{s.clinic}</th>
+        <th scope="col">{s.price}</th>
+        {!compact && <th scope="col">{s.preop}</th>}
+        {!compact && <th scope="col">{s.consult}</th>}
+        <th scope="col">{s.room}</th>
+        {!compact && <th scope="col">{s.stay}</th>}
+        {!compact && <th scope="col">{s.icu}</th>}
+        <th scope="col"><span class="sr">{s.quote}</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          <td><b>{r.name}</b><span class="lvl">{r.level} · {r.district}</span>{r.price === cheapest && <span class="best">{lang === 'es' ? 'Opción más accesible' : 'Lowest cost'}</span>}</td>
+          <td class="pr">{first(r.price)}<small>{second(r.price)}</small></td>
+          {!compact && <td>{r.preop || '—'}</td>}
+          {!compact && <td>{r.consult || '—'}</td>}
+          <td>{r.room || '—'}</td>
+          {!compact && <td>{r.stay || '—'}</td>}
+          {!compact && <td>{r.icu || '—'}</td>}
+          <td><a href={wa(r.name)} data-cta="whatsapp" target="_blank" rel="noopener">{s.quote}</a></td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+<p class="note">{s.fxNote(site.fx.usd, site.fx.date)} {s.priceNote}</p>

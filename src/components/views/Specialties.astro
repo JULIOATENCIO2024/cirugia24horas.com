@@ -1,0 +1,66 @@
+---
+// Hub de especialidades (sin `id`) o página de una especialidad (con `id`).
+import Base from '../../layouts/Base.astro';
+import Doctors from '../Doctors.astro';
+import { pen, usd, type Lang } from '../../data/site';
+import { procedures, specialties, specById } from '../../data/catalog';
+import { minPrice, url, pages } from '../../lib/data';
+import { L } from '../../lib/i18n';
+
+interface Props { lang: Lang; id?: string }
+const { lang, id } = Astro.props;
+const s = L(lang);
+const es = lang === 'es';
+const list = id ? [specById(id)] : specialties;
+const sp = id ? specById(id) : null;
+const nm = (x: { es: string; en: string }) => (es ? x.es : x.en);
+const price = (n: number) => (es ? `${pen(n)} (≈ ${usd(n)})` : `${usd(n)} (${pen(n)})`);
+const title = sp
+  ? (es ? `${sp.es} en Lima: precios por clínica | Cirugía 24 Horas` : `${sp.en} in Peru: Costs by Clinic | Cirugía 24 Horas`)
+  : (es ? 'Especialidades quirúrgicas en Lima | Cirugía 24 Horas' : 'Surgical Specialties in Peru | Cirugía 24 Horas');
+const description = sp
+  ? (es ? `${sp.introEs} Compara precios en soles y dólares en las clínicas de la red.` : `${sp.introEn} Compare prices in US dollars and soles across our clinics in Lima.`)
+  : (es ? 'Cirugía general, bariátrica, urología, ginecología, traumatología, estética y más: más de 30 cirugías con precio por clínica en Lima.' : 'General, bariatric, urology, gynecology, orthopedics, plastic surgery and more: 30+ procedures with prices by clinic in Lima, Peru.');
+const path = sp ? url.spec(sp.id, lang) : pages.specialties[lang];
+const alt = sp ? { es: url.spec(sp.id, 'es'), en: url.spec(sp.id, 'en') } : pages.specialties;
+const crumbs = [{ name: s.specialties, href: pages.specialties[lang] }, ...(sp ? [{ name: nm(sp), href: path }] : [])];
+const itemList = {
+  '@type': 'ItemList',
+  '@id': `https://cirugia24horas.com${path}#list`,
+  itemListElement: procedures.filter((p) => !sp || p.specialty === sp.id).map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: nm(p), url: `https://cirugia24horas.com${url.proc(p, lang)}` })),
+};
+---
+<Base lang={lang} title={title} description={description} alt={alt} crumbs={crumbs} main={[itemList]} type="CollectionPage">
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">{s.specialties}</span>
+      <h1>{sp ? (es ? `${sp.es} en Lima` : `${sp.en} in Lima, Peru`) : (es ? 'Especialidades y cirugías' : 'Specialties and procedures')}</h1>
+      <p class="lead">{description}</p>
+    </div>
+  </section>
+  {list.map((x) => (
+    <section>
+      <div class="wrap">
+        <h2>{sp ? (es ? 'Procedimientos y precio desde' : 'Procedures and starting price') : <a href={url.spec(x.id, lang)} style="color:inherit;text-decoration:none">{nm(x)}</a>}</h2>
+        {!sp && <p class="sub">{es ? x.introEs : x.introEn}</p>}
+        <div class="grid three">
+          {procedures.filter((p) => p.specialty === x.id).map((p) => (
+            <div class="card">
+              <h3><a href={url.proc(p, lang)}>{nm(p)}</a></h3>
+              <div class="price-from">{s.from} {price(minPrice(p.id))}</div>
+              <a class="more" href={url.proc(p, lang)}>{s.seePrice} →</a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+  {sp && (
+    <section class="alt">
+      <div class="wrap">
+        <h2>{s.surgeons}</h2>
+        <Doctors lang={lang} area={sp.id} />
+      </div>
+    </section>
+  )}
+</Base>

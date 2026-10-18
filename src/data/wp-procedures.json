@@ -1,0 +1,4685 @@
+{
+ "apendice": {
+  "slug": "apendice",
+  "wpTitle": "Apéndice",
+  "seoTitle": "Apéndice – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "Compara clínicas, precios e infraestructura para tu cirugía de apéndice. Te ayudamos a elegir una opción segura, clara y adaptada a tu presupuesto.",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 4000,
+    "tagline": "Precios justos para una cirugía segura.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 4200,
+    "tagline": "Tu salud primero, con atención inmediata.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, por orden de llegada, lunes a sábado",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 5000,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 6500,
+    "tagline": "Cirugía segura en buenas manos.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Del Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 8000,
+    "tagline": "Excelencia en salud y experiencia premium.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1699, cámara StrykeCam 4K",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuándo es necesaria la cirugía de vesícula?",
+    "a": "Se recomienda cuando hay cálculos (piedras), inflamación, dolor frecuente o infecciones que afectan el funcionamiento normal de la vesícula."
+   },
+   {
+    "q": "¿La cirugía de vesícula es peligrosa?",
+    "a": "Es un procedimiento seguro y muy común. Generalmente se realiza por laparoscopía, lo que reduce riesgos y permite una recuperación más rápida."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación?",
+    "a": "La mayoría de los pacientes puede retomar sus actividades normales en pocos días, aunque se recomienda evitar esfuerzos físicos intensos durante algunas semanas."
+   },
+   {
+    "q": "¿Qué puedo comer después de la cirugía?",
+    "a": "Al inicio se recomienda una dieta baja en grasas y de fácil digestión. Con el tiempo, la mayoría de las personas puede volver a su alimentación habitual."
+   },
+   {
+    "q": "¿Se puede vivir sin vesícula?",
+    "a": "Sí, el cuerpo se adapta sin problemas. La bilis pasa directamente al intestino, permitiendo una digestión normal en la mayoría de los casos."
+   }
+  ]
+ },
+ "balon-gastrico": {
+  "slug": "balon-gastrico",
+  "wpTitle": "Balón Gastrico",
+  "seoTitle": "Balón Gastrico – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 7500,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Horario presencial": "No hace consulta, solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD.",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 7500,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD.",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 8500,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD.",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 10000,
+    "tagline": "Cirugía segura en buenas manos.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD.",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inka",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 10000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1699, cámara StrykeCam 4K.",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es el balón gástrico?",
+    "a": "El balón gástrico es un procedimiento no quirúrgico para bajar de peso. Consiste en colocar un balón de silicona dentro del estómago para ocupar espacio, ayudar a comer menos y generar sensación de saciedad más rápido."
+   },
+   {
+    "q": "¿El balón gástrico requiere cirugía?",
+    "a": "No. Generalmente se coloca mediante endoscopía, sin cortes ni incisiones. Es un tratamiento temporal y reversible, indicado como apoyo para la pérdida de peso junto con cambios en la alimentación y el estilo de vida."
+   },
+   {
+    "q": "¿Quiénes pueden colocarse un balón gástrico?",
+    "a": "Puede ser una opción para personas con sobrepeso u obesidad que no han logrado bajar de peso solo con dieta y ejercicio. En algunos centros se considera para pacientes adultos con un índice de masa corporal aproximado entre **30 y 40**, aunque la indicación final depende de la evaluación médica."
+   },
+   {
+    "q": "¿Cuánto tiempo permanece el balón gástrico en el estómago?",
+    "a": "El balón gástrico permanece de forma temporal. El tiempo exacto depende del tipo de balón utilizado y del plan médico, pero normalmente se retira después de algunos meses mediante un procedimiento endoscópico."
+   },
+   {
+    "q": "¿Qué molestias puede causar el balón gástrico?",
+    "a": "Durante los primeros días pueden aparecer náuseas, dolor o molestia abdominal, vómitos o sensación de llenura mientras el estómago se adapta. Las complicaciones graves son poco frecuentes, pero pueden incluir úlceras, sangrado, perforación u obstrucción intestinal, por eso es importante realizarlo con especialistas y mantener controles médicos."
+   }
+  ]
+ },
+ "calculos-renales": {
+  "slug": "calculos-renales",
+  "wpTitle": "Cálculos Renales",
+  "seoTitle": "Cálculos Renales – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 6500,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Procedimiento programado": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 7500,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Procedimiento programado": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Urológica",
+    "img": "URL_DE_TU_IMAGEN_UROLOGICA_AQUI",
+    "price": 8500,
+    "tagline": "Expertos en tu salud urológica",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Procedimiento programado": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción directa",
+    "name": "Cirugía 24 Horas",
+    "img": "URL_DE_TU_IMAGEN_CIRUGIA_24_HORAS_AQUI",
+    "price": 4050,
+    "tagline": "Evaluación rápida para cálculos renales",
+    "fields": {
+     "Evaluación": "Según caso clínico",
+     "Citas": "Coordinación por WhatsApp",
+     "Ubicación": "Lima",
+     "Especialidad": "Cálculos renales",
+     "Consulta": "Por confirmar",
+     "Atención": "Orientación médica",
+     "Coordinación": "Evaluación y orientación según diagnóstico",
+     "Pacientes": "Nacionales",
+     "Procedimiento": "Según evaluación médica",
+     "Seguimiento": "Según indicación del especialista"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué son los cálculos renales?",
+    "a": "Son piedras que se forman en los riñones por acumulación de minerales y sales, y pueden causar dolor intenso al desplazarse."
+   },
+   {
+    "q": "¿Cuáles son los síntomas de los cálculos renales?",
+    "a": "Dolor fuerte en la espalda o costado, náuseas, vómitos, sangre en la orina y dificultad para orinar."
+   },
+   {
+    "q": "¿Cómo se tratan los cálculos renales?",
+    "a": "Depende del tamaño: pueden eliminarse con medicamentos, hidratación o procedimientos como láser o cirugía."
+   },
+   {
+    "q": "¿Cuándo es necesaria una cirugía?",
+    "a": "Cuando el cálculo es grande, causa dolor intenso persistente o bloquea el flujo de orina."
+   },
+   {
+    "q": "¿Se pueden prevenir los cálculos renales?",
+    "a": "Sí, bebiendo suficiente agua, manteniendo una dieta balanceada y siguiendo las indicaciones médicas."
+   }
+  ]
+ },
+ "cirugia-de-artroscopia": {
+  "slug": "cirugia-de-artroscopia",
+  "wpTitle": "Cirugía de Artroscopia",
+  "seoTitle": "Cirugía de Artroscopia – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 5000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Según evaluación",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 5500,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción traumatológica",
+    "name": "Traumatológica",
+    "img": "URL_DE_TU_IMAGEN_TRAUMATOLOGICA_AQUI",
+    "price": 6500,
+    "tagline": "Recupera tu movilidad",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 8000,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 8500,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es una artroscopia?",
+    "a": "La artroscopia es un procedimiento quirúrgico mínimamente invasivo que permite al traumatólogo observar el interior de una articulación mediante una cámara pequeña. También puede servir para tratar lesiones usando instrumentos especiales a través de pequeñas incisiones."
+   },
+   {
+    "q": "¿Para qué se realiza una artroscopia?",
+    "a": "Se puede indicar para evaluar o tratar lesiones en articulaciones como rodilla, hombro, cadera, tobillo o muñeca. En el caso de la rodilla, por ejemplo, puede utilizarse para reparar o retirar parte de un menisco lesionado, tratar cartílago dañado, retirar cuerpos sueltos o reconstruir ligamentos."
+   },
+   {
+    "q": "¿La artroscopia duele?",
+    "a": "Durante el procedimiento se utiliza anestesia, por lo que el paciente no debería sentir dolor mientras se realiza. Después de la cirugía puede presentarse dolor leve, inflamación o rigidez, que suelen manejarse con medicamentos, reposo y las indicaciones del especialista."
+   },
+   {
+    "q": "¿Cuánto tiempo tarda la recuperación después de una artroscopia?",
+    "a": "La recuperación depende de la articulación tratada y del tipo de lesión. En muchos casos, la artroscopia permite una recuperación más rápida que una cirugía abierta, aunque es importante seguir las indicaciones médicas y realizar rehabilitación cuando el traumatólogo lo indique."
+   },
+   {
+    "q": "¿Qué riesgos tiene una artroscopia?",
+    "a": "Aunque es un procedimiento seguro y las complicaciones no son comunes, pueden existir riesgos como infección, sangrado, coágulos, rigidez articular o lesión de nervios, vasos sanguíneos o tejidos cercanos. Por eso debe realizarse con evaluación médica previa y seguimiento después de la cirugía."
+   }
+  ]
+ },
+ "cirugia-de-aumento-de-mamas": {
+  "slug": "cirugia-de-aumento-de-mamas",
+  "wpTitle": "Cirugía de Aumento de Mamas",
+  "seoTitle": "Cirugía de Aumento de Mamas – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 8000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 9000,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Plástica",
+    "img": "URL_DE_TU_IMAGEN_CLINICA_PLASTICA_AQUI",
+    "price": 10000,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 11500,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 12000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es el aumento de mamas?",
+    "a": "Es una cirugía estética que busca aumentar el tamaño y mejorar la forma del busto mediante la colocación de implantes mamarios o, en algunos casos, mediante transferencia de grasa."
+   },
+   {
+    "q": "¿Quiénes pueden realizarse un aumento de mamas?",
+    "a": "Pueden considerarlo mujeres que desean aumentar el volumen de sus senos, corregir asimetrías o recuperar firmeza después del embarazo, lactancia o pérdida de peso. La evaluación médica es importante para determinar si la paciente es candidata."
+   },
+   {
+    "q": "¿La cirugía de aumento de mamas duele?",
+    "a": "Durante la operación no se siente dolor porque se realiza con anestesia. Después puede haber molestias, presión o sensibilidad en la zona, pero suelen controlarse con medicamentos indicados por el cirujano."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación?",
+    "a": "Generalmente, la paciente puede retomar actividades ligeras después de algunos días. El ejercicio, levantar peso o movimientos intensos deben evitarse hasta que el especialista lo autorice."
+   },
+   {
+    "q": "¿Los implantes mamarios duran para siempre?",
+    "a": "No necesariamente. Aunque pueden durar muchos años, los implantes deben ser controlados periódicamente y podrían requerir cambio si hay ruptura, contractura capsular, molestias o decisión estética de la paciente."
+   }
+  ]
+ },
+ "cirugia-de-diastasis-de-rectos": {
+  "slug": "cirugia-de-diastasis-de-rectos",
+  "wpTitle": "Cirugía de Diástasis de Rectos",
+  "seoTitle": "Cirugía de Diástasis de Rectos – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "Compara clínicas, precios e infraestructura para tu cirugía de diástasis de rectos. Te ayudamos a elegir una opción segura, clara y adaptada a tu presupuesto.",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 4000,
+    "tagline": "Precios justos para una cirugía segura.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 4200,
+    "tagline": "Tu salud primero, con atención inmediata.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 520",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, por orden de llegada, lunes a sábado",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 5000,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 6500,
+    "tagline": "Cirugía segura en buenas manos.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Del Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 8000,
+    "tagline": "Excelencia en salud y experiencia premium.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1699, cámara StrykeCam 4K",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es la diástasis de rectos?",
+    "a": "La diástasis de rectos es la separación de los músculos rectos abdominales debido al debilitamiento de la línea media del abdomen. Puede generar abultamiento abdominal, sensación de abdomen “salido”, debilidad del core y molestias funcionales."
+   },
+   {
+    "q": "¿Cuándo se recomienda una cirugía de diástasis de rectos?",
+    "a": "La cirugía puede considerarse cuando la separación es marcada, hay molestias persistentes, debilidad abdominal, presencia de hernia asociada o cuando los ejercicios y la fisioterapia no han logrado mejorar el problema. La indicación final debe realizarla un especialista después de una evaluación médica."
+   },
+   {
+    "q": "¿La diástasis de rectos se puede corregir sin cirugía?",
+    "a": "En algunos casos, sí. La fisioterapia y los ejercicios específicos pueden ayudar a fortalecer la zona abdominal y mejorar la función del core. Sin embargo, cuando la separación es severa o existe exceso de piel, hernia o molestias importantes, puede ser necesaria una reparación quirúrgica."
+   },
+   {
+    "q": "¿La cirugía de diástasis de rectos es igual a una abdominoplastia?",
+    "a": "No siempre. La reparación de diástasis busca unir o reforzar los músculos abdominales separados. En algunos casos puede combinarse con una abdominoplastia, especialmente si también hay exceso de piel o flacidez abdominal."
+   },
+   {
+    "q": "¿Cuánto tiempo toma la recuperación después de la cirugía?",
+    "a": "La recuperación depende del tipo de técnica y de cada paciente. Generalmente se recomienda usar una faja abdominal, evitar cargar peso y no realizar ejercicios intensos durante varias semanas. Algunas referencias médicas mencionan el uso de soporte abdominal por **6 a 8 semanas** después de la cirugía."
+   }
+  ]
+ },
+ "cirugia-de-embarazo-ectopico": {
+  "slug": "cirugia-de-embarazo-ectopico",
+  "wpTitle": "Cirugía de Embarazo Ectópico",
+  "seoTitle": "Cirugía de Embarazo Ectópico – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 4000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Según evaluación",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 5000,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción ginecológica",
+    "name": "Gineco NOVO Q",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 6000,
+    "tagline": "Entenderte es prioridad",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 7500,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 8000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es un embarazo ectópico?",
+    "a": "Un embarazo ectópico ocurre cuando el embarazo se implanta fuera del útero, con mayor frecuencia en una trompa de Falopio. Es una condición que requiere atención médica, porque el embarazo no puede continuar de forma normal y puede poner en riesgo la salud de la paciente."
+   },
+   {
+    "q": "¿Cuáles son los síntomas de un embarazo ectópico?",
+    "a": "Los síntomas pueden incluir **dolor pélvico o abdominal**, sangrado vaginal anormal, mareos, debilidad o dolor en el hombro. En algunos casos, al inicio puede parecer un embarazo normal, por eso es importante acudir al ginecólogo ante cualquier señal de alarma."
+   },
+   {
+    "q": "¿Por qué se produce un embarazo ectópico?",
+    "a": "Puede relacionarse con alteraciones en las trompas de Falopio, infecciones previas, cirugías pélvicas, antecedentes de embarazo ectópico o algunos métodos anticonceptivos como el DIU si ocurre un embarazo durante su uso. Sin embargo, también puede presentarse sin una causa evidente."
+   },
+   {
+    "q": "¿Cómo se diagnostica un embarazo ectópico?",
+    "a": "El diagnóstico suele realizarse mediante evaluación ginecológica, análisis de sangre para medir la hormona del embarazo y ecografía. Estos estudios ayudan a confirmar si el embarazo está dentro del útero o si existe sospecha de implantación fuera de él."
+   },
+   {
+    "q": "¿Cuál es el tratamiento para un embarazo ectópico?",
+    "a": "El tratamiento depende del estado de la paciente, el tiempo de evolución y si existe ruptura o sangrado. Puede incluir medicamento como **metotrexato** en casos seleccionados o cirugía cuando hay complicaciones o riesgo de ruptura."
+   }
+  ]
+ },
+ "cirugia-de-fracturas": {
+  "slug": "cirugia-de-fracturas",
+  "wpTitle": "Cirugía de Fracturas",
+  "seoTitle": "Cirugía de Fracturas – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 10000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Según evaluación",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 10500,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción traumatológica",
+    "name": "Traumatológica",
+    "img": "URL_DE_TU_IMAGEN_TRAUMATOLOGICA_AQUI",
+    "price": 11500,
+    "tagline": "Recupera tu movilidad",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 13000,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 13500,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuándo una fractura necesita operación?",
+    "a": "Una fractura puede necesitar cirugía cuando el hueso está desplazado, fragmentado, expuesto, afecta una articulación o no puede mantenerse alineado solo con yeso o férula. La decisión depende del tipo de fractura, la ubicación y la evaluación del traumatólogo."
+   },
+   {
+    "q": "¿En qué consiste la operación de una fractura?",
+    "a": "La cirugía busca colocar el hueso en su posición correcta y estabilizarlo para que pueda sanar adecuadamente. En muchos casos se utilizan placas, tornillos, clavos o fijadores para mantener los fragmentos óseos alineados."
+   },
+   {
+    "q": "¿Todos los pacientes con fractura necesitan cirugía?",
+    "a": "No. Algunas fracturas pueden tratarse con inmovilización, yeso, férula, reposo y controles médicos. La cirugía suele reservarse para fracturas más complejas, inestables o con riesgo de consolidar mal."
+   },
+   {
+    "q": "¿Cuánto tiempo tarda la recuperación después de una cirugía de fractura?",
+    "a": "La recuperación depende del hueso afectado, la gravedad de la fractura, la edad del paciente y el tipo de cirugía realizada. Puede haber dolor e inflamación durante las primeras semanas, y en muchos casos se requiere rehabilitación para recuperar fuerza y movilidad."
+   },
+   {
+    "q": "¿Qué cuidados debo tener después de la operación?",
+    "a": "Después de la cirugía se recomienda cuidar la herida, mantener la zona elevada si el médico lo indica, no cargar peso antes de tiempo, asistir a controles, tomar los medicamentos recetados y cumplir con la fisioterapia o rehabilitación. También es importante acudir de inmediato si aparece fiebre, dolor intenso, secreción, cambio de color o aumento importante de la inflamación."
+   }
+  ]
+ },
+ "cirugia-de-hernia-inguinal-convencional-con-corte": {
+  "slug": "cirugia-de-hernia-inguinal-convencional-con-corte",
+  "wpTitle": "Cirugía de Hernia Inguinal Convencional (Con Corte)",
+  "seoTitle": "Cirugía de Hernia Inguinal Convencional (Con Corte) – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "Compara clínicas, precios e infraestructura para tu cirugía de hernia inguinal convencional con corte. Te ayudamos a elegir una opción segura, clara y adaptada a tu presupuesto.",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 2500,
+    "tagline": "Precios justos para una cirugía segura.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 2700,
+    "tagline": "Tu salud primero, con atención inmediata.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, por orden de llegada, lunes a sábado",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 3000,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 4500,
+    "tagline": "Cirugía segura en buenas manos.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Del Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 6000,
+    "tagline": "Excelencia en salud y experiencia premium.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1699, cámara StrykeCam 4K",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuándo es necesaria una cirugía de hernia inguinal?",
+    "a": "La cirugía suele indicarse cuando la hernia causa dolor, aumenta de tamaño, genera molestias al caminar, cargar peso o hacer esfuerzo, o cuando existe riesgo de complicaciones. Las hernias dolorosas o que crecen normalmente requieren evaluación médica para definir el tratamiento adecuado."
+   },
+   {
+    "q": "¿La cirugía de hernia inguinal es ambulatoria?",
+    "a": "En muchos casos, sí. El paciente puede regresar a casa el mismo día o al día siguiente, dependiendo del tipo de cirugía, la anestesia utilizada y la evaluación del cirujano."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación?",
+    "a": "Las opciones más comunes son la **cirugía abierta** y la **cirugía laparoscópica o mínimamente invasiva**. La elección depende del tipo de hernia, el estado del paciente y la recomendación del especialista."
+   },
+   {
+    "q": "¿Qué tipos de cirugía existen para tratar una hernia inguinal?",
+    "a": "Al inicio se recomienda una dieta baja en grasas y de fácil digestión. Con el tiempo, la mayoría de las personas puede volver a su alimentación habitual."
+   },
+   {
+    "q": "¿Qué cuidados debo tener después de la cirugía?",
+    "a": "Después de la operación se recomienda caminar de forma progresiva, evitar cargar peso, cuidar la herida, mantener una alimentación que evite el estreñimiento y acudir a los controles médicos. Retomar actividades intensas debe hacerse solo con autorización del cirujano."
+   }
+  ]
+ },
+ "cirugia-de-hernia-inguinal": {
+  "slug": "cirugia-de-hernia-inguinal",
+  "wpTitle": "Cirugía de Hernia Inguinal",
+  "seoTitle": "Cirugía de Hernia Inguinal – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "Compara clínicas, precios e infraestructura para tu cirugía de hernia inguinal. Te ayudamos a elegir una opción segura, clara y adaptada a tu presupuesto.",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 3500,
+    "tagline": "Precios justos para una cirugía segura.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 3700,
+    "tagline": "Tu salud primero, con atención inmediata.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, por orden de llegada, lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 4000,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 5500,
+    "tagline": "Cirugía segura en buenas manos.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Del Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 7000,
+    "tagline": "Excelencia en salud y experiencia premium.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1699, cámara StrykeCam 4K",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuándo es necesaria una cirugía de hernia inguinal?",
+    "a": "La cirugía suele indicarse cuando la hernia causa dolor, aumenta de tamaño, genera molestias al caminar, cargar peso o hacer esfuerzo, o cuando existe riesgo de complicaciones. Las hernias dolorosas o que crecen normalmente requieren evaluación médica para definir el tratamiento adecuado."
+   },
+   {
+    "q": "¿La cirugía de hernia inguinal es ambulatoria?",
+    "a": "En muchos casos, sí. El paciente puede regresar a casa el mismo día o al día siguiente, dependiendo del tipo de cirugía, la anestesia utilizada y la evaluación del cirujano."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación?",
+    "a": "La recuperación puede tomar entre **4 y 6 semanas**, aunque algunas actividades ligeras pueden retomarse antes según la evolución del paciente. Es importante evitar esfuerzos intensos y seguir las indicaciones médicas."
+   },
+   {
+    "q": "¿Qué tipos de cirugía existen para tratar una hernia inguinal?",
+    "a": "Las opciones más comunes son la **cirugía abierta** y la **cirugía laparoscópica o mínimamente invasiva**. La elección depende del tipo de hernia, el estado del paciente y la recomendación del especialista."
+   },
+   {
+    "q": "¿Qué cuidados debo tener después de la cirugía?",
+    "a": "Después de la operación se recomienda caminar de forma progresiva, evitar cargar peso, cuidar la herida, mantener una alimentación que evite el estreñimiento y acudir a los controles médicos. Retomar actividades intensas debe hacerse solo con autorización del cirujano."
+   }
+  ]
+ },
+ "cirugia-de-hernia-umbilical": {
+  "slug": "cirugia-de-hernia-umbilical",
+  "wpTitle": "Cirugía de Hernia Umbilical",
+  "seoTitle": "Cirugía de Hernia Umbilical – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "Compara clínicas, precios e infraestructura para tu cirugía de hernia umbilical. Te ayudamos a elegir una opción segura, clara y adaptada a tu presupuesto.",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 2500,
+    "tagline": "Precios justos para una cirugía segura.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 2700,
+    "tagline": "Tu salud primero, con atención inmediata.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, por orden de llegada, lunes a sábado",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 3000,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 4500,
+    "tagline": "Cirugía segura en buenas manos.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Del Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 6000,
+    "tagline": "Excelencia en salud y experiencia premium.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1699, cámara StrykeCam 4K",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es una hernia umbilical?",
+    "a": "Una hernia umbilical aparece cuando una parte del tejido o intestino sobresale a través de una zona débil de la pared abdominal, cerca del ombligo. Suele verse como un bulto o hinchazón en esa zona."
+   },
+   {
+    "q": "¿Cuándo necesita cirugía una hernia umbilical?",
+    "a": "En adultos, la cirugía suele recomendarse cuando la hernia aumenta de tamaño, causa dolor, molestias o tiene riesgo de complicarse. También se recomienda evaluación médica si el bulto no se reduce o se vuelve sensible."
+   },
+   {
+    "q": "¿La hernia umbilical puede desaparecer sola?",
+    "a": "En bebés, muchas hernias umbilicales pueden cerrarse solas durante los primeros años de vida. En adultos, normalmente no desaparecen por sí solas y pueden requerir reparación quirúrgica."
+   },
+   {
+    "q": "¿Qué síntomas indican una posible complicación?",
+    "a": "Se debe buscar atención médica si la hernia causa dolor intenso, sensibilidad, cambio de color, vómitos, aumento rápido del bulto o si no puede volver a introducirse. Estos signos pueden indicar una hernia complicada."
+   },
+   {
+    "q": "¿Qué cuidados debo tener después de la cirugía?",
+    "a": "Después de una cirugía de hernia umbilical, se recomienda reposo relativo, caminar de forma progresiva, evitar cargar peso, cuidar la herida y seguir las indicaciones del cirujano. Las actividades físicas fuertes deben retomarse solo con autorización médica."
+   }
+  ]
+ },
+ "cirugia-de-prolapso-uterino": {
+  "slug": "cirugia-de-prolapso-uterino",
+  "wpTitle": "Cirugía de Prolapso Uterino",
+  "seoTitle": "Cirugía de Prolapso Uterino – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 6500,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Según evaluación",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 6500,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción ginecológica",
+    "name": "Gineco NOVO Q",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 7700,
+    "tagline": "Entenderte es prioridad",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 9000,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 9500,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es el prolapso uterino?",
+    "a": "El prolapso uterino ocurre cuando el útero desciende de su posición normal hacia la vagina debido al debilitamiento de los músculos y tejidos del suelo pélvico. Puede presentarse de forma leve o avanzada, según el grado de descenso."
+   },
+   {
+    "q": "¿Qué síntomas puede causar el prolapso uterino?",
+    "a": "Puede causar sensación de peso o presión en la pelvis, bulto o tejido que sobresale por la vagina, dolor lumbar, molestias al caminar, dificultad para orinar, sensación de vaciado incompleto de la vejiga o problemas para evacuar."
+   },
+   {
+    "q": "¿Por qué aparece el prolapso uterino?",
+    "a": "Puede relacionarse con embarazos, partos vaginales, envejecimiento, menopausia, estreñimiento crónico, tos persistente, obesidad o actividades que aumentan la presión abdominal. Estos factores pueden debilitar progresivamente el soporte del suelo pélvico."
+   },
+   {
+    "q": "¿Todos los casos de prolapso uterino necesitan cirugía?",
+    "a": "No. Si el prolapso es leve o no causa molestias importantes, puede manejarse con ejercicios de suelo pélvico, cambios de hábitos, control del peso o uso de pesarios vaginales. Cuando los síntomas son severos o afectan la vida diaria, el especialista puede recomendar cirugía."
+   },
+   {
+    "q": "¿Cuándo debo acudir al ginecólogo?",
+    "a": "Se recomienda acudir al ginecólogo si sientes presión pélvica, notas un bulto en la vagina, tienes molestias al orinar o evacuar, dolor pélvico frecuente, escapes de orina o dificultad para realizar tus actividades diarias. Una evaluación médica permite confirmar el grado del prolapso y definir el tratamiento más adecuado."
+   }
+  ]
+ },
+ "cirugia-de-quiste-hidatidico-hepatico": {
+  "slug": "cirugia-de-quiste-hidatidico-hepatico",
+  "wpTitle": "Cirugía de Quiste Hidatídico Hepático",
+  "seoTitle": "Cirugía de Quiste Hidatídico Hepático – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "Compara clínicas, precios e infraestructura para tu cirugía de quiste hidatídico hepático. Te ayudamos a elegir una opción segura, clara y adaptada a tu presupuesto.",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 6000,
+    "tagline": "Precios justos para una cirugía segura.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 6500,
+    "tagline": "Tu salud primero, con atención inmediata.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, por orden de llegada, lunes a sábado",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 7500,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 9000,
+    "tagline": "Cirugía segura en buenas manos.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Del Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 10000,
+    "tagline": "Excelencia en salud y experiencia premium.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1699, cámara StrykeCam 4K",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es un quiste hidatídico hepático?",
+    "a": "Es una lesión quística causada por una infección parasitaria llamada **hidatidosis o equinococosis quística**. En muchos casos afecta al hígado y puede crecer lentamente durante años antes de causar síntomas."
+   },
+   {
+    "q": "¿Cuándo se necesita cirugía para un quiste hidatídico hepático?",
+    "a": "La cirugía puede ser necesaria cuando el quiste es grande, complicado, infectado, causa dolor, compresión de órganos cercanos o tiene riesgo de ruptura. También puede indicarse cuando existe sospecha de comunicación con la vía biliar o cuando otras opciones no son adecuadas."
+   },
+   {
+    "q": "¿Todos los quistes hidatídicos hepáticos se operan?",
+    "a": "No siempre. El tratamiento depende del tamaño, ubicación, etapa del quiste y estado del paciente. Algunas opciones incluyen cirugía, tratamiento antiparasitario, técnicas percutáneas como PAIR o vigilancia médica en casos seleccionados."
+   },
+   {
+    "q": "¿Qué síntomas puede causar un quiste hidatídico en el hígado?",
+    "a": "Puede causar dolor o molestia en la parte superior derecha del abdomen, sensación de llenura, náuseas, aumento del volumen abdominal o síntomas relacionados con complicaciones. Algunos pacientes pueden no presentar síntomas al inicio y detectarlo mediante ecografía, tomografía o resonancia."
+   },
+   {
+    "q": "¿Qué cuidados se deben tener después de la cirugía?",
+    "a": "Después de la cirugía se debe seguir control médico, cuidar la herida, evitar esfuerzos físicos, cumplir con los medicamentos indicados y realizar controles por imágenes. En algunos casos, el médico puede indicar tratamiento antiparasitario para reducir el riesgo de recurrencia."
+   }
+  ]
+ },
+ "cirugia-de-tiroides": {
+  "slug": "cirugia-de-tiroides",
+  "wpTitle": "Cirugía de Tiroides",
+  "seoTitle": "Cirugía de Tiroides – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 7500,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Cabeza y Cuello",
+    "img": "URL_DE_TU_IMAGEN_CABEZA_Y_CUELLO_AQUI",
+    "price": 9000,
+    "tagline": "Especialistas en cirugía de tiroides",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 8000,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 10500,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 11000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuándo se recomienda una cirugía de tiroides?",
+    "a": "La cirugía de tiroides puede recomendarse cuando existen nódulos sospechosos, cáncer de tiroides, bocio grande que causa presión o dificultad para tragar/respirar, hipertiroidismo en casos seleccionados o crecimiento anormal de la glándula. La indicación final depende de la evaluación del especialista."
+   },
+   {
+    "q": "¿Qué tipos de cirugía de tiroides existen?",
+    "a": "Los tipos más comunes son la **tiroidectomía total**, donde se retira toda la glándula, y la **lobectomía o hemitiroidectomía**, donde se retira solo una parte. La elección depende del diagnóstico, tamaño del problema, estudios previos y criterio médico."
+   },
+   {
+    "q": "¿Después de la cirugía necesitaré tomar hormona tiroidea?",
+    "a": "Si se retira toda la tiroides, normalmente el paciente necesita tomar hormona tiroidea de por vida. Si se retira solo una parte, algunas personas pueden mantener una función tiroidea suficiente, aunque deben seguir controles médicos y análisis de sangre."
+   },
+   {
+    "q": "¿Qué riesgos puede tener una cirugía de tiroides?",
+    "a": "Como toda cirugía, puede tener riesgos como sangrado, infección, cambios temporales o permanentes en la voz, y alteraciones del calcio si se afectan las glándulas paratiroides. Por eso es importante realizarla con un equipo especializado y seguir los controles posteriores."
+   },
+   {
+    "q": "¿Cómo es la recuperación después de una cirugía de tiroides?",
+    "a": "La recuperación depende del tipo de cirugía y del estado del paciente. Generalmente se indican cuidados de la herida, evitar esfuerzos físicos, controlar dolor o molestias en el cuello y asistir a controles para revisar la cicatrización, la voz, el calcio y los niveles hormonales."
+   }
+  ]
+ },
+ "cirugia-de-tunel-del-carpio": {
+  "slug": "cirugia-de-tunel-del-carpio",
+  "wpTitle": "Cirugía de Túnel del Carpio",
+  "seoTitle": "Cirugía de Túnel del Carpio – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 3000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Según evaluación",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 3500,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción traumatológica",
+    "name": "Traumatología",
+    "img": "URL_DE_TU_IMAGEN_TRAUMATOLOGIA_AQUI",
+    "price": 4500,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 6000,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 6500,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es el síndrome del túnel del carpio?",
+    "a": "El síndrome del túnel del carpio ocurre cuando el **nervio mediano** se comprime a nivel de la muñeca. Puede causar adormecimiento, hormigueo, dolor, debilidad o sensación de corriente en la mano y los dedos."
+   },
+   {
+    "q": "¿Cuándo se recomienda la cirugía de túnel del carpio?",
+    "a": "La cirugía puede recomendarse cuando los síntomas son intensos, no mejoran con tratamientos conservadores o cuando existen signos de daño nervioso, pérdida de fuerza o atrofia muscular. La decisión debe tomarla el especialista después de la evaluación clínica y, si es necesario, estudios complementarios."
+   },
+   {
+    "q": "¿En qué consiste la cirugía de túnel del carpio?",
+    "a": "La cirugía consiste en liberar el ligamento que cubre el túnel carpiano para disminuir la presión sobre el nervio mediano. Puede realizarse mediante una incisión en la palma o con técnicas mínimamente invasivas, según el caso y la experiencia del cirujano."
+   },
+   {
+    "q": "¿La cirugía es ambulatoria?",
+    "a": "En muchos casos, sí. La cirugía de liberación del túnel carpiano suele ser un procedimiento corto y no siempre requiere hospitalización. Dependiendo del paciente, puede realizarse con anestesia local y retorno a casa el mismo día."
+   },
+   {
+    "q": "¿Cuánto tiempo toma la recuperación?",
+    "a": "La recuperación varía según cada paciente y el grado de compresión del nervio. La herida puede sanar en algunas semanas, pero la mejoría completa de la sensibilidad y fuerza puede tardar varios meses; en algunos casos, la recuperación total puede tomar hasta un año."
+   }
+  ]
+ },
+ "cirugia-de-varices-bilateral": {
+  "slug": "cirugia-de-varices-bilateral",
+  "wpTitle": "Cirugía de Varices Bilateral",
+  "seoTitle": "Cirugía de Varices Bilateral – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 5000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Según evaluación.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 5500,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción cardiovascular",
+    "name": "Cardiovascular",
+    "img": "URL_DE_TU_IMAGEN_CARDIOVASCULAR_AQUI",
+    "price": 6500,
+    "tagline": "Soluciones reales para tu salud",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 8000,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 8500,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es la cirugía de varices bilateral?",
+    "a": "Es un procedimiento que trata las varices presentes en ambas piernas, con el objetivo de mejorar la circulación, aliviar molestias y mejorar la apariencia de las extremidades."
+   },
+   {
+    "q": "¿Cuándo se recomienda operar las varices en ambas piernas?",
+    "a": "Se recomienda cuando las varices causan dolor, pesadez, hinchazón, calambres, cambios en la piel o cuando existe riesgo de complicaciones como úlceras o trombosis."
+   },
+   {
+    "q": "¿La cirugía de varices bilateral es dolorosa?",
+    "a": "Generalmente se realiza con anestesia y técnicas modernas que reducen las molestias. Después del procedimiento puede haber dolor leve, moretones o sensibilidad, pero suele controlarse con indicaciones médicas."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación?",
+    "a": "La recuperación depende de la técnica utilizada y del estado del paciente. En muchos casos, la persona puede caminar el mismo día y retomar actividades ligeras en pocos días, siguiendo las recomendaciones del especialista."
+   },
+   {
+    "q": "¿Las varices pueden volver después de la cirugía?",
+    "a": "Sí, pueden aparecer nuevas varices con el tiempo si existe predisposición, sobrepeso, sedentarismo o problemas circulatorios. Por eso es importante seguir controles médicos, usar medias de compresión si se indican y mantener hábitos saludables."
+   }
+  ]
+ },
+ "cirugia-de-varicocele": {
+  "slug": "cirugia-de-varicocele",
+  "wpTitle": "Cirugía de Varicocele",
+  "seoTitle": "Cirugía de Varicocele – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "",
+    "name": "Raimondi",
+    "img": "",
+    "price": 2500,
+    "tagline": "Precios justos",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Urológica",
+    "img": "",
+    "price": 4500,
+    "tagline": "Expertos en tu salud urológica",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Higuereta",
+    "img": "",
+    "price": 5500,
+    "tagline": "Cirúgia segura en buenas manos",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Inka",
+    "img": "",
+    "price": 6500,
+    "tagline": "Precios justos",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Santa Lucia",
+    "img": "",
+    "price": 3500,
+    "tagline": "Tu salud primero",
+    "fields": {}
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es el varicocele?",
+    "a": "El varicocele es la dilatación o agrandamiento de las venas dentro del escroto, similar a las várices que pueden aparecer en las piernas. Puede presentarse sin síntomas o causar molestias en la zona testicular."
+   },
+   {
+    "q": "¿Qué síntomas puede causar el varicocele?",
+    "a": "Algunos pacientes pueden sentir dolor testicular leve, pesadez, inflamación en el escroto o molestia que aumenta al estar de pie, hacer esfuerzo o durante el día. En otros casos, el varicocele no causa síntomas y se detecta durante una evaluación médica."
+   },
+   {
+    "q": "¿El varicocele puede afectar la fertilidad?",
+    "a": "Sí. El varicocele puede afectar la producción o calidad de los espermatozoides y se considera una causa frecuente de infertilidad masculina. Por eso, en pacientes que buscan tener hijos, el especialista puede solicitar un espermatograma y otros estudios."
+   },
+   {
+    "q": "¿Cuándo se recomienda operar un varicocele?",
+    "a": "No todos los varicoceles necesitan cirugía. El tratamiento puede recomendarse si hay dolor persistente, alteraciones en la fertilidad, problemas en el crecimiento testicular o cambios en el espermatograma. La indicación final debe realizarla un urólogo después de la evaluación."
+   },
+   {
+    "q": "¿Cómo es la recuperación después de la cirugía de varicocele?",
+    "a": "La cirugía de varicocele, conocida como varicocelectomía, suele realizarse para aliviar dolor o mejorar problemas relacionados con fertilidad. La recuperación varía según la técnica utilizada, pero muchas personas retoman actividades progresivamente y pueden recuperarse por completo en algunas semanas."
+   }
+  ]
+ },
+ "cirugia-laparoscopica-de-hernia-hiatal": {
+  "slug": "cirugia-laparoscopica-de-hernia-hiatal",
+  "wpTitle": "Cirugía Laparoscópica de Hernia Hiatal",
+  "seoTitle": "Cirugía Laparoscópica de Hernia Hiatal – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "Compara clínicas, precios e infraestructura para tu cirugía laparoscópica de hernia hiatal. Te ayudamos a elegir una opción segura, clara y adaptada a tu presupuesto.",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 7000,
+    "tagline": "Cirugía segura al precio justo",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 7500,
+    "tagline": "Opérate hoy, disfruta mañana",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, por orden de llegada, lunes a sábado",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 8500,
+    "tagline": "Cirugías seguras en manos expertas",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 10000,
+    "tagline": "Seguridad, cuidado y privacidad en un solo lugar",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Del Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 11000,
+    "tagline": "Cirugía premium para una experiencia superior",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1699, cámara StrykeCam 4K",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es una hernia hiatal?",
+    "a": "La hernia hiatal ocurre cuando una parte del estómago sube hacia el tórax a través del hiato, una abertura natural del diafragma. Puede estar relacionada con síntomas como reflujo, acidez, regurgitación, dolor en el pecho o dificultad para tragar."
+   },
+   {
+    "q": "¿Cuándo se recomienda una cirugía laparoscópica de hernia hiatal?",
+    "a": "La cirugía puede recomendarse cuando los síntomas son intensos, el reflujo no mejora con medicamentos o cambios de hábitos, existe una hernia grande, o hay complicaciones como dificultad para tragar, inflamación severa o riesgo de que el estómago quede atrapado. La indicación final depende de la evaluación del cirujano."
+   },
+   {
+    "q": "¿En qué consiste la cirugía laparoscópica de hernia hiatal?",
+    "a": "Generalmente, el cirujano recoloca el estómago en su posición normal dentro del abdomen y reduce el tamaño de la abertura del diafragma. En algunos casos, también se realiza una funduplicatura, que ayuda a reforzar la zona inferior del esófago para disminuir el reflujo."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación después de la cirugía?",
+    "a": "La recuperación varía según cada paciente, pero muchas personas pueden regresar a casa entre **1 y 3 días** después de una funduplicatura o reparación laparoscópica. Durante las primeras semanas se suelen indicar cuidados especiales, dieta progresiva y evitar esfuerzos físicos."
+   },
+   {
+    "q": "¿Qué cuidados debo tener después de una cirugía de hernia hiatal?",
+    "a": "Después de la cirugía se recomienda comer porciones pequeñas, masticar bien, comer despacio, seguir una dieta blanda o progresiva según indicación médica, evitar bebidas gaseosas y no realizar esfuerzos físicos hasta que el especialista lo autorice."
+   }
+  ]
+ },
+ "clinica-de-miomas-uterinos": {
+  "slug": "clinica-de-miomas-uterinos",
+  "wpTitle": "Clínica de Miomas Uterinos",
+  "seoTitle": "Clínica de Miomas Uterinos – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 5000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No, solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 5000,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción ginecológica",
+    "name": "Gineco NOVO Q",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 6000,
+    "tagline": "Entenderte es prioridad",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 7500,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 9000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué son los miomas uterinos?",
+    "a": "Los miomas uterinos, también llamados fibromas o leiomiomas, son tumores benignos que crecen en el útero. En la mayoría de casos no son cancerosos, pero pueden causar molestias dependiendo de su tamaño, ubicación y cantidad."
+   },
+   {
+    "q": "¿Qué síntomas pueden causar los miomas?",
+    "a": "Algunas mujeres no presentan síntomas. Cuando sí aparecen, pueden incluir sangrado menstrual abundante, periodos prolongados, dolor pélvico, presión en el abdomen, dolor lumbar, necesidad frecuente de orinar, estreñimiento o molestias durante las relaciones sexuales."
+   },
+   {
+    "q": "¿Los miomas uterinos pueden afectar la fertilidad?",
+    "a": "Sí, en algunos casos. Dependiendo de su tamaño y ubicación, los miomas pueden dificultar el embarazo o causar complicaciones durante la gestación. Por eso, si la paciente desea tener hijos, es importante una evaluación ginecológica personalizada."
+   },
+   {
+    "q": "¿Todos los miomas necesitan cirugía?",
+    "a": "No. El tratamiento depende de los síntomas, el tamaño del mioma, su ubicación, la edad de la paciente y si desea conservar la fertilidad. Algunas opciones incluyen control médico, medicamentos, procedimientos mínimamente invasivos o cirugía."
+   },
+   {
+    "q": "¿Cuándo debo acudir al ginecólogo?",
+    "a": "Se recomienda acudir al especialista si hay sangrado menstrual muy abundante, dolor pélvico constante, sensación de presión abdominal, anemia, dificultad para embarazarse o aumento del volumen abdominal. Una ecografía puede ayudar a confirmar el diagnóstico y definir el tratamiento adecuado."
+   }
+  ]
+ },
+ "cpre": {
+  "slug": "cpre",
+  "wpTitle": "Cpre",
+  "seoTitle": "Cpre – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción directa",
+    "name": "Cirugía 24 Horas",
+    "img": "URL_DE_TU_IMAGEN_CIRUGIA_24_HORAS_AQUI",
+    "price": 4050,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Precio": "Referencial, puede variar según evaluación médica.",
+     "Atención": "Orientación rápida",
+     "Especialidad": "CPRE",
+     "Beneficio principal": "Cirugía segura en buenas manos.",
+     "Evaluación": "Según diagnóstico médico.",
+     "Disponibilidad": "Consultar por WhatsApp."
+    }
+   },
+   {
+    "label": "Opción accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 3000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Precio": "Referencial, puede variar según evaluación médica.",
+     "Beneficio": "Precios justos",
+     "Especialidad": "CPRE",
+     "Beneficio principal": "Precios justos.",
+     "Evaluación": "Según diagnóstico médico.",
+     "Disponibilidad": "Consultar por WhatsApp."
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "URL_DE_TU_IMAGEN_GASTROENTEROLOGICA_AQUI",
+    "price": 3500,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Precio": "Referencial, puede variar según evaluación médica.",
+     "Beneficio": "Resultados reales",
+     "Especialidad": "CPRE",
+     "Beneficio principal": "Cirugía segura, resultados reales.",
+     "Evaluación": "Según diagnóstico médico.",
+     "Disponibilidad": "Consultar por WhatsApp."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 3300,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Precio": "Referencial, puede variar según evaluación médica.",
+     "Beneficio": "Tu salud primero",
+     "Especialidad": "CPRE",
+     "Beneficio principal": "Tu salud primero.",
+     "Evaluación": "Según diagnóstico médico.",
+     "Disponibilidad": "Consultar por WhatsApp."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es la CPRE?",
+    "a": "Es un procedimiento endoscópico que permite diagnosticar y tratar problemas en los conductos biliares y pancreáticos."
+   },
+   {
+    "q": "¿Cuándo se recomienda una CPRE?",
+    "a": "Se indica cuando hay cálculos en la vía biliar, obstrucciones, infecciones o problemas en el páncreas."
+   },
+   {
+    "q": "¿La CPRE es dolorosa?",
+    "a": "No, generalmente se realiza con sedación, por lo que el paciente no siente dolor durante el procedimiento."
+   },
+   {
+    "q": "¿Cuánto tiempo dura el procedimiento?",
+    "a": "Suele durar entre 30 minutos y 1 hora, dependiendo de la complejidad del caso."
+   },
+   {
+    "q": "¿Qué riesgos tiene la CPRE?",
+    "a": "Como todo procedimiento, tiene riesgos poco frecuentes como pancreatitis, infección o sangrado, pero es segura en manos de especialistas."
+   }
+  ]
+ },
+ "hernia-discal": {
+  "slug": "hernia-discal",
+  "wpTitle": "Hernia Discal",
+  "seoTitle": "Hernia Discal – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "Compara clínicas, precios e infraestructura para tu cirugía de hernia discal. Te ayudamos a elegir una opción segura, clara y adaptada a tu presupuesto.",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 10000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 11000,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, por orden de llegada, lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Cardiovascular",
+    "img": "URL_DE_TU_IMAGEN_CARDIOVASCULAR_AQUI",
+    "price": 12000,
+    "tagline": "Soluciones reales para tu salud",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "Previa cita",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 13500,
+    "tagline": "Tecnología quirúrgica avanzada",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Del Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 14000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuándo se recomienda una cirugía de hernia discal?",
+    "a": "La cirugía de hernia discal suele recomendarse cuando el dolor se extiende hacia el brazo o la pierna, existe debilidad muscular, dificultad para caminar o cuando los tratamientos conservadores, como medicamentos, fisioterapia o infiltraciones, no han dado resultado tras varias semanas."
+   },
+   {
+    "q": "¿En qué consiste la cirugía de hernia discal?",
+    "a": "Generalmente, el procedimiento busca retirar la parte del disco que está comprimiendo el nervio. Uno de los procedimientos más comunes es la discectomía o microdiscectomía, que puede realizarse con técnicas mínimamente invasivas en muchos casos."
+   },
+   {
+    "q": "¿La cirugía de hernia discal elimina el dolor por completo?",
+    "a": "La cirugía suele ser más efectiva para aliviar el dolor que baja por la pierna o el brazo debido a la compresión del nervio. Puede no ser igual de efectiva para el dolor localizado solo en la espalda o el cuello, por lo que cada caso debe evaluarse de manera individual."
+   },
+   {
+    "q": "¿Cuánto tiempo toma la recuperación?",
+    "a": "La recuperación varía según el tipo de cirugía y el paciente, pero muchas personas pueden retomar actividades ligeras en unas 2 semanas, actividades rutinarias alrededor de las 6 semanas, y esfuerzos físicos más intensos después de varias semanas más, siempre siguiendo las indicaciones del especialista."
+   },
+   {
+    "q": "¿Qué riesgos tiene la cirugía de hernia discal?",
+    "a": "Como toda cirugía, puede presentar riesgos como infección, sangrado, fuga de líquido espinal o lesión de nervios o vasos cercanos. Aunque en general se considera un procedimiento seguro, es importante que el cirujano explique claramente los beneficios y posibles complicaciones antes de la intervención."
+   }
+  ]
+ },
+ "hidrocele": {
+  "slug": "hidrocele",
+  "wpTitle": "Hidrocele",
+  "seoTitle": "Hidrocele – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "",
+    "name": "Raimondi",
+    "img": "",
+    "price": 2500,
+    "tagline": "Precios justos",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Urológica",
+    "img": "",
+    "price": 4500,
+    "tagline": "Expertos en tu salud urológica",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Higuereta",
+    "img": "",
+    "price": 5500,
+    "tagline": "Cirúgia segura en buenas manos",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Inka",
+    "img": "",
+    "price": 6500,
+    "tagline": "Precios justos",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Santa Lucia",
+    "img": "",
+    "price": 3500,
+    "tagline": "Tu salud primero",
+    "fields": {}
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es un hidrocele?",
+    "a": "El hidrocele es la acumulación de líquido alrededor del testículo, lo que produce una hinchazón en el escroto. Puede presentarse en bebés, niños o adultos."
+   },
+   {
+    "q": "¿Qué síntomas causa el hidrocele?",
+    "a": "El síntoma más común es el aumento de tamaño del escroto, generalmente sin dolor. En algunos casos puede causar pesadez, incomodidad o molestias al caminar, sentarse o realizar actividad física."
+   },
+   {
+    "q": "¿El hidrocele desaparece solo?",
+    "a": "En bebés, muchos hidroceles desaparecen sin tratamiento durante el primer año de vida. En adultos, si el hidrocele es persistente, grande o causa molestias, puede requerir evaluación médica y tratamiento."
+   },
+   {
+    "q": "¿Cuándo se recomienda la cirugía de hidrocele?",
+    "a": "La cirugía puede recomendarse cuando el hidrocele no desaparece, aumenta de tamaño, causa molestias, dificulta las actividades diarias o se asocia a otra condición como una hernia inguinal. La decisión debe tomarla un especialista después de la evaluación."
+   },
+   {
+    "q": "¿Cómo es la recuperación después de la cirugía?",
+    "a": "La reparación de hidrocele suele realizarse de forma ambulatoria en muchos casos. Después de la cirugía, se recomienda reposo relativo, uso de soporte escrotal si el médico lo indica, cuidado de la herida y evitar esfuerzos físicos hasta recibir autorización médica."
+   }
+  ]
+ },
+ "histerectomia": {
+  "slug": "histerectomia",
+  "wpTitle": "Histerectomía",
+  "seoTitle": "Histerectomía – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 6000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No, solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 6000,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción ginecológica",
+    "name": "Gineco NOVO Q",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 7000,
+    "tagline": "Entenderte es prioridad",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 8500,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 9000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es una histerectomía?",
+    "a": "La histerectomía es una cirugía en la que se retira el útero. Puede ser parcial, cuando se retira solo el útero y se deja el cuello uterino, o total, cuando se retiran el útero y el cuello uterino."
+   },
+   {
+    "q": "¿Cuándo se recomienda una histerectomía?",
+    "a": "Puede indicarse en casos de miomas uterinos, sangrado abundante, dolor pélvico crónico, endometriosis, adenomiosis, prolapso uterino o algunos tipos de cáncer ginecológico. La decisión depende del diagnóstico, los síntomas, la edad de la paciente y si desea conservar la fertilidad."
+   },
+   {
+    "q": "¿Qué tipos de histerectomía existen?",
+    "a": "Existen diferentes formas de realizarla: abdominal, vaginal, laparoscópica o robótica. La elección depende del caso clínico, el tamaño del útero, la enfermedad a tratar y la evaluación del ginecólogo."
+   },
+   {
+    "q": "¿Después de una histerectomía puedo quedar embarazada?",
+    "a": "No. Después de retirar el útero, la paciente ya no puede quedar embarazada y deja de menstruar. Por eso, antes de la cirugía, es importante conversar con el especialista sobre el diagnóstico, las alternativas disponibles y los objetivos de tratamiento."
+   },
+   {
+    "q": "¿Cuánto tiempo toma la recuperación?",
+    "a": "La recuperación depende del tipo de cirugía. Después de una histerectomía abdominal puede tomar aproximadamente **6 a 8 semanas**, mientras que las técnicas vaginales, laparoscópicas o robóticas suelen tener una recuperación más corta. Durante este tiempo se recomienda evitar cargar peso, tener reposo relativo y seguir los controles médicos."
+   }
+  ]
+ },
+ "legrado-ginecologico": {
+  "slug": "legrado-ginecologico",
+  "wpTitle": "Legrado ginecológico",
+  "seoTitle": "Legrado ginecológico – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 3000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Según evaluación",
+     "Citas virtuales": "No",
+     "Procedimiento programado": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 4000,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Procedimiento programado": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción ginecológica",
+    "name": "Gineco NOVO Q",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 5000,
+    "tagline": "Entenderte es prioridad",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Procedimiento programado": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 6500,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Procedimiento programado": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 7000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Procedimiento programado": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es un legrado ginecológico?",
+    "a": "El legrado ginecológico, también conocido como **dilatación y legrado**, es un procedimiento en el que el ginecólogo dilata el cuello uterino y retira tejido del interior del útero. Puede realizarse con fines diagnósticos o terapéuticos, según la evaluación médica."
+   },
+   {
+    "q": "¿Cuándo se recomienda un legrado ginecológico?",
+    "a": "Puede indicarse en casos de **sangrado uterino anormal**, sospecha de alteraciones en el endometrio, restos retenidos después de un aborto espontáneo o parto, o cuando el médico necesita obtener una muestra del tejido uterino para estudio."
+   },
+   {
+    "q": "¿El legrado ginecológico duele?",
+    "a": "Durante el procedimiento se suele utilizar anestesia o sedación, por lo que la paciente no debería sentir dolor intenso mientras se realiza. Después, pueden aparecer cólicos leves o molestias similares a las menstruales, además de un sangrado ligero durante algunos días."
+   },
+   {
+    "q": "¿Cuánto tiempo tarda la recuperación después de un legrado?",
+    "a": "La recuperación suele ser rápida, aunque puede variar según cada paciente y el motivo del procedimiento. En muchos casos, la mujer puede retomar actividades habituales en pocos días, siguiendo las indicaciones del ginecólogo y evitando esfuerzos o relaciones sexuales hasta que el médico lo autorice."
+   },
+   {
+    "q": "¿Qué riesgos puede tener un legrado ginecológico?",
+    "a": "Aunque las complicaciones son poco frecuentes, pueden presentarse riesgos como sangrado, infección, perforación uterina, lesión del cuello uterino o formación de cicatrices dentro del útero, conocida como síndrome de Asherman. Por eso es importante realizarlo con un especialista y acudir a control médico si aparece fiebre, sangrado abundante o flujo con mal olor."
+   }
+  ]
+ },
+ "lipoescultura": {
+  "slug": "lipoescultura",
+  "wpTitle": "Lipoescultura",
+  "seoTitle": "Lipoescultura – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 4000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 5000,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Plástica",
+    "img": "URL_DE_TU_IMAGEN_CLINICA_PLASTICA_AQUI",
+    "price": 6000,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 6000,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 8000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es la lipoescultura?",
+    "a": "Es un procedimiento estético que elimina grasa localizada de ciertas zonas del cuerpo para moldear y definir la silueta, como abdomen, cintura, espalda, brazos o muslos."
+   },
+   {
+    "q": "¿La lipoescultura sirve para bajar de peso?",
+    "a": "No. La lipoescultura no es un tratamiento para la obesidad ni reemplaza una dieta saludable. Su objetivo principal es mejorar el contorno corporal eliminando grasa localizada."
+   },
+   {
+    "q": "¿Qué zonas se pueden tratar con lipoescultura?",
+    "a": "Las zonas más comunes son abdomen, cintura, espalda, brazos, muslos, papada y flancos. La elección depende de la evaluación del cirujano y de las necesidades del paciente."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación?",
+    "a": "La recuperación varía según cada paciente y la cantidad de zonas tratadas. Generalmente, se puede retomar actividades ligeras en pocos días, usando una faja postoperatoria según indicación médica."
+   },
+   {
+    "q": "¿Los resultados de la lipoescultura son permanentes?",
+    "a": "Los resultados pueden mantenerse por mucho tiempo si el paciente conserva hábitos saludables, una alimentación equilibrada y actividad física regular. Si hay aumento de peso, puede acumularse grasa nuevamente."
+   }
+  ]
+ },
+ "manga-gastrica": {
+  "slug": "manga-gastrica",
+  "wpTitle": "Manga Gástrica",
+  "seoTitle": "Manga Gástrica – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "Compara clínicas, precios e infraestructura para tu cirugía de manga gástrica. Te ayudamos a elegir una opción segura, clara y adaptada a tu presupuesto.",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 11500,
+    "tagline": "Precios justos para una cirugía segura.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD.",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 12000,
+    "tagline": "Tu salud primero, con atención inmediata.",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, por orden de llegada, lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD.",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 12000,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD.",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 12500,
+    "tagline": "Cirugía segura en buenas manos.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD.",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inka",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 15000,
+    "tagline": "Excelencia en salud y experiencia premium.",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1699, cámara StrykeCam 4K.",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es la manga gástrica?",
+    "a": "La manga gástrica, también llamada **gastrectomía vertical en manga**, es una cirugía bariátrica en la que se reduce el tamaño del estómago, dejando una forma similar a un tubo o “manga”. Esto ayuda a que el paciente se sienta satisfecho con menos cantidad de comida."
+   },
+   {
+    "q": "¿Quiénes pueden ser candidatos a una manga gástrica?",
+    "a": "Puede ser una opción para personas con obesidad severa o con obesidad asociada a enfermedades como diabetes tipo 2, hipertensión, apnea del sueño u otros problemas relacionados con el peso. La indicación depende del índice de masa corporal, antecedentes médicos y evaluación del especialista."
+   },
+   {
+    "q": "¿La manga gástrica es reversible?",
+    "a": "No. La manga gástrica es considerada un procedimiento **permanente**, porque se retira una parte importante del estómago. Por eso, antes de realizarla, el paciente debe pasar por una evaluación médica, nutricional y psicológica."
+   },
+   {
+    "q": "¿Cuánto tiempo toma la recuperación después de una manga gástrica?",
+    "a": "La recuperación varía según cada paciente. Generalmente, después de la cirugía se requiere una dieta progresiva, controles médicos y evitar esfuerzos físicos durante las primeras semanas. El retorno a las actividades habituales debe hacerse siguiendo las indicaciones del cirujano."
+   },
+   {
+    "q": "¿Qué cuidados debo tener después de la cirugía?",
+    "a": "Después de una manga gástrica es importante seguir el plan nutricional, comer porciones pequeñas, evitar bebidas azucaradas o gaseosas, tomar los suplementos indicados, asistir a controles médicos y mantener actividad física progresiva. La cirugía es una herramienta para bajar de peso, pero los resultados dependen también del compromiso con nuevos hábitos."
+   }
+  ]
+ },
+ "prostata": {
+  "slug": "prostata",
+  "wpTitle": "Prostata",
+  "seoTitle": "Prostata – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 8500,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "La Victoria",
+     "Cx Abierta": "S/8,500",
+     "RTU Monopolar": "S/5,500",
+     "RTU Bipolar": "S/6,500",
+     "Enucleación endoscópica": "S/8,500",
+     "Láser Holmium": "S/10,000",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Según evaluación",
+     "Citas virtuales": "No",
+     "Procedimiento programado": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 8500,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Borja",
+     "Cx Abierta": "S/8,500",
+     "RTU Monopolar": "S/6,000",
+     "RTU Bipolar": "S/7,000",
+     "Enucleación endoscópica": "S/9,000",
+     "Láser Holmium": "S/10,500",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Procedimiento programado": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Urológica",
+    "img": "URL_DE_TU_IMAGEN_UROLOGICA_AQUI",
+    "price": 8500,
+    "tagline": "Expertos en tu salud urológica",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Cx Abierta": "S/8,500",
+     "RTU Monopolar": "S/7,000",
+     "RTU Bipolar": "S/8,000",
+     "Enucleación endoscópica": "S/10,000",
+     "Láser Holmium": "S/11,500",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Procedimiento programado": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 10000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Cx Abierta": "S/10,000",
+     "RTU Monopolar": "S/8,000",
+     "RTU Bipolar": "S/9,000",
+     "Enucleación endoscópica": "S/11,000",
+     "Láser Holmium": "S/12,500",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Procedimiento programado": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 11000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Cx Abierta": "S/11,000",
+     "RTU Monopolar": "S/9,000",
+     "RTU Bipolar": "S/10,000",
+     "Enucleación endoscópica": "S/12,000",
+     "Láser Holmium": "S/13,500",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Procedimiento programado": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuándo es necesaria una cirugía de próstata?",
+    "a": "Se recomienda cuando hay agrandamiento de la próstata, dificultad para orinar, infecciones recurrentes o sospecha de cáncer."
+   },
+   {
+    "q": "¿La cirugía de próstata es segura?",
+    "a": "Sí, es un procedimiento común y seguro cuando lo realiza un especialista, con buenos resultados en la mayoría de los pacientes."
+   },
+   {
+    "q": "¿Qué tipos de cirugía de próstata existen?",
+    "a": "Existen varias técnicas, como la cirugía láser, resección transuretral (RTU) y cirugía abierta, dependiendo del caso del paciente."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación?",
+    "a": "Generalmente entre 2 a 6 semanas, aunque puede variar según el tipo de cirugía y la salud del paciente."
+   },
+   {
+    "q": "¿La cirugía afecta la vida sexual o urinaria?",
+    "a": "Puede haber cambios temporales, pero en muchos casos se recupera la función con el tiempo y seguimiento médico."
+   }
+  ]
+ },
+ "protesis-de-cadera": {
+  "slug": "protesis-de-cadera",
+  "wpTitle": "Prótesis de Cadera",
+  "seoTitle": "Prótesis de Cadera – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 11000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Según evaluación",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 6000,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción traumatológica",
+    "name": "Traumatológica",
+    "img": "URL_DE_TU_IMAGEN_TRAUMATOLOGICA_AQUI",
+    "price": 13000,
+    "tagline": "Recupera tu movilidad",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 14500,
+    "tagline": "Tecnología quirúrgica avanzada",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 15000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuándo es necesaria una prótesis de cadera?",
+    "a": "Se recomienda cuando existe dolor intenso, desgaste de la articulación (artrosis) o dificultad para caminar que no mejora con tratamientos conservadores."
+   },
+   {
+    "q": "¿La cirugía de prótesis de cadera es segura?",
+    "a": "Sí, es un procedimiento frecuente y seguro cuando lo realiza un especialista, con altos índices de éxito."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación?",
+    "a": "La mayoría de pacientes puede caminar con ayuda en pocos días, y la recuperación completa suele tomar entre 6 y 12 semanas."
+   },
+   {
+    "q": "¿Cuánto dura una prótesis de cadera?",
+    "a": "Puede durar entre 15 y 20 años o más, dependiendo del cuidado y estilo de vida del paciente."
+   },
+   {
+    "q": "¿Podré volver a mis actividades normales después de la cirugía?",
+    "a": "Sí, después de la rehabilitación, la mayoría de pacientes retoma sus actividades diarias con menos dolor y mejor movilidad."
+   }
+  ]
+ },
+ "protesis-de-rodilla": {
+  "slug": "protesis-de-rodilla",
+  "wpTitle": "Prótesis de Rodilla",
+  "seoTitle": "Prótesis de Rodilla – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 13000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Según evaluación",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 13500,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción traumatológica",
+    "name": "Traumatológica",
+    "img": "URL_DE_TU_IMAGEN_TRAUMATOLOGICA_AQUI",
+    "price": 14500,
+    "tagline": "Recupera tu movilidad",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 16000,
+    "tagline": "Tecnología quirúrgica avanzada",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 16500,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta especialista": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "Según evaluación médica."
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuándo es necesario una prótesis de rodilla?",
+    "a": "Se recomienda cuando el dolor es intenso, hay desgaste avanzado (artrosis) y los tratamientos como medicamentos o fisioterapia ya no funcionan."
+   },
+   {
+    "q": "¿La cirugía de prótesis de rodilla es segura?",
+    "a": "Sí, es un procedimiento común y seguro cuando lo realiza un especialista. La mayoría de pacientes mejora notablemente su calidad de vida."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación?",
+    "a": "Generalmente entre 4 a 12 semanas para actividades básicas, aunque la recuperación completa puede tomar algunos meses."
+   },
+   {
+    "q": "¿Cuánto dura una prótesis de rodilla?",
+    "a": "Puede durar entre 15 y 20 años, dependiendo del cuidado del paciente y su nivel de actividad."
+   },
+   {
+    "q": "¿Después de la cirugía podré caminar normalmente?",
+    "a": "Sí, la mayoría de pacientes vuelve a caminar sin dolor y con mejor movilidad tras la rehabilitación."
+   }
+  ]
+ },
+ "rinoplastia": {
+  "slug": "rinoplastia",
+  "wpTitle": "Rinoplastia",
+  "seoTitle": "Rinoplastia – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 5000,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Plástica",
+    "img": "URL_DE_TU_IMAGEN_CLINICA_PLASTICA_AQUI",
+    "price": 7000,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 8500,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 6000,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 9000,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Qué es la rinoplastia?",
+    "a": "Es una cirugía estética y/o funcional que busca mejorar la forma, tamaño o proporción de la nariz. También puede ayudar a corregir problemas respiratorios cuando existe desviación del tabique u otras alteraciones."
+   },
+   {
+    "q": "¿Quiénes pueden realizarse una rinoplastia?",
+    "a": "Pueden considerarla personas que desean mejorar la apariencia de su nariz o corregir dificultades para respirar. Es importante pasar por una evaluación médica para definir si el paciente es candidato."
+   },
+   {
+    "q": "¿La rinoplastia es dolorosa?",
+    "a": "Durante la cirugía no se siente dolor porque se realiza con anestesia. Después puede haber inflamación, congestión, moretones o molestias leves, que suelen mejorar con los cuidados indicados por el especialista."
+   },
+   {
+    "q": "¿Cuánto tiempo tarda la recuperación?",
+    "a": "La recuperación inicial suele tomar algunos días. La inflamación y los moretones disminuyen progresivamente, aunque el resultado final puede apreciarse mejor con el paso de los meses."
+   },
+   {
+    "q": "¿Los resultados de una rinoplastia son permanentes?",
+    "a": "Sí, los resultados suelen ser duraderos. Sin embargo, es importante seguir las indicaciones médicas durante la recuperación y asistir a los controles para asegurar una buena evolución."
+   }
+  ]
+ },
+ "tratamiento-de-ginecomastia": {
+  "slug": "tratamiento-de-ginecomastia",
+  "wpTitle": "Tratamiento de Ginecomastia",
+  "seoTitle": "Tratamiento de Ginecomastia – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 5500,
+    "tagline": "Precios justos",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 6500,
+    "tagline": "Tu salud primero",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, orden de llegada de lunes a sábado.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida.",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción estética especializada",
+    "name": "Clínica Plástica",
+    "img": "URL_DE_TU_IMAGEN_CLINICA_PLASTICA_AQUI",
+    "price": 7500,
+    "tagline": "Cirugía segura, resultados reales.",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Por confirmar",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "Según evaluación",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 9000,
+    "tagline": "Cirugía segura en buenas manos",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 9500,
+    "tagline": "Excelencia en salud",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada de lunes a sábado.",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II.",
+     "UCI": "Sí",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es la ginecomastia?",
+    "a": "La ginecomastia es el aumento del tejido mamario en hombres. Puede aparecer por cambios hormonales, uso de ciertos medicamentos, obesidad, condiciones médicas o durante etapas como la pubertad y la adultez mayor."
+   },
+   {
+    "q": "¿Cómo saber si tengo ginecomastia o solo grasa en el pecho?",
+    "a": "La ginecomastia se relaciona con el crecimiento de tejido glandular mamario, mientras que la pseudoginecomastia se debe principalmente a acumulación de grasa. La evaluación médica permite diferenciar ambos casos y definir el tratamiento adecuado."
+   },
+   {
+    "q": "¿La ginecomastia desaparece sola?",
+    "a": "En algunos adolescentes puede mejorar con el tiempo, especialmente si está relacionada con cambios hormonales propios de la pubertad. Sin embargo, cuando persiste, causa dolor, incomodidad o afecta la confianza del paciente, es recomendable acudir a una evaluación especializada."
+   },
+   {
+    "q": "¿Qué tratamientos existen para la ginecomastia?",
+    "a": "El tratamiento depende de la causa, el grado de aumento mamario y el tipo de tejido predominante. Puede incluir control médico, cambios de hábitos, suspensión o ajuste de medicamentos si corresponde, liposucción, extirpación de tejido glandular o una combinación de técnicas quirúrgicas."
+   },
+   {
+    "q": "¿Cómo es la recuperación después de la cirugía de ginecomastia?",
+    "a": "Después de la cirugía se suelen colocar vendajes y una prenda de compresión para ayudar a reducir la inflamación y sostener el nuevo contorno del pecho. En algunos casos puede colocarse un drenaje temporal, y la actividad física intensa debe retomarse solo cuando el cirujano lo autorice"
+   }
+  ]
+ },
+ "vasectomia": {
+  "slug": "vasectomia",
+  "wpTitle": "Vasectomia",
+  "seoTitle": "Vasectomia – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "",
+  "cards": [
+   {
+    "label": "",
+    "name": "Raimondi",
+    "img": "",
+    "price": 2500,
+    "tagline": "Precios justos",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Urológica",
+    "img": "",
+    "price": 4500,
+    "tagline": "Expertos en tu salud urológica",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Higuereta",
+    "img": "",
+    "price": 5500,
+    "tagline": "Cirúgia segura en buenas manos",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Inka",
+    "img": "",
+    "price": 6500,
+    "tagline": "Precios justos",
+    "fields": {}
+   },
+   {
+    "label": "",
+    "name": "Santa Lucia",
+    "img": "",
+    "price": 3500,
+    "tagline": "Tu salud primero",
+    "fields": {}
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Qué es la vasectomía?",
+    "a": "La vasectomía es un procedimiento anticonceptivo masculino en el que se cortan o bloquean los conductos deferentes, que son los encargados de transportar los espermatozoides. De esta forma, el semen ya no contiene espermatozoides capaces de producir un embarazo."
+   },
+   {
+    "q": "¿La vasectomía es una cirugía complicada?",
+    "a": "No. Generalmente es un procedimiento ambulatorio, de corta duración y con bajo riesgo de complicaciones. En muchos casos se realiza con anestesia local y el paciente puede volver a casa el mismo día."
+   },
+   {
+    "q": "¿La vasectomía afecta el deseo sexual o la erección?",
+    "a": "No debería afectar el deseo sexual, la erección ni la capacidad de eyacular. La diferencia principal es que, después de confirmar el resultado con un examen de semen, el líquido seminal ya no tendrá espermatozoides para producir un embarazo."
+   },
+   {
+    "q": "¿La vasectomía funciona de inmediato?",
+    "a": "No. Después del procedimiento aún pueden quedar espermatozoides en los conductos, por eso se debe usar otro método anticonceptivo hasta que el médico confirme, mediante un análisis de semen, que ya no hay espermatozoides."
+   },
+   {
+    "q": "¿Cuánto tiempo toma la recuperación después de una vasectomía?",
+    "a": "La recuperación suele ser rápida. Muchos pacientes pueden retomar actividades ligeras en pocos días, pero se recomienda evitar ejercicio intenso, cargar peso o tener relaciones sexuales hasta que el especialista lo autorice."
+   }
+  ]
+ },
+ "vesicula": {
+  "slug": "vesicula",
+  "wpTitle": "Vesícula",
+  "seoTitle": "Vesícula – Cirugía 24 horas",
+  "metaDescription": "",
+  "intro": "Compara clínicas, precios e infraestructura para tu cirugía de vesícula. Te ayudamos a elegir una opción segura, clara y adaptada a tu presupuesto.",
+  "cards": [
+   {
+    "label": "Opción más accesible",
+    "name": "Raimondi",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/4fbf2eda-e9c9-4283-bf78-5fe7921ef09a-1-1.jpeg",
+    "price": 2500,
+    "tagline": "Cirugía segura al precio justo",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 280",
+     "Consulta": "S/ 50",
+     "Ubicación": "La Victoria",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "No. Solo opera y da alta.",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "No",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción inmediata",
+    "name": "Santa Lucía",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/PHOTO-2022-12-28-14-16-30_upscayl_4x_ultrasharp-1-scaled.png",
+    "price": 2700,
+    "tagline": "Opérate hoy, disfruta mañana",
+    "fields": {
+     "Pre operatorios": "No incluye - S/ 550",
+     "Consulta": "S/ 50",
+     "Ubicación": "San Borja",
+     "Citas": "Orden de llegada",
+     "Habitación": "Compartida",
+     "Pacientes": "Nacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "8 am a 12 pm, por orden de llegada, lunes a sábado",
+     "Citas virtuales": "No",
+     "Cirugía programada": "No",
+     "Emergencia": "Sí",
+     "Ambulancia": "Sí, no incluida en el costo",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción especializada",
+    "name": "Gastroenterológica",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/IMG_0347-1-scaled-1.jpg",
+    "price": 3200,
+    "tagline": "Cirugías seguras en manos expertas",
+    "fields": {
+     "Pre operatorios": "No incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "San Isidro",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "No",
+     "UCI": "No",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción reconocida/UCI",
+    "name": "Higuereta",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/e7ca906d-8241-47be-b563-f08a47e3bf28.jpeg",
+    "price": 4500,
+    "tagline": "Seguridad, cuidado y privacidad en un solo lugar",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Privada",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo I",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1599, cámara StrykeCam HD",
+     "Hospitalización": "1 día"
+    }
+   },
+   {
+    "label": "Opción premium",
+    "name": "Del Inca",
+    "img": "https://cirugia24horas.com/wp-content/uploads/2026/05/1d7235ef-a47f-4def-befe-a365563bd4a6.jpeg",
+    "price": 6000,
+    "tagline": "Cirugía premium para una experiencia superior",
+    "fields": {
+     "Pre operatorios": "Sí incluye",
+     "Consulta": "S/ 100",
+     "Ubicación": "Miraflores",
+     "Citas": "Previa cita",
+     "Habitación": "Suite",
+     "Pacientes": "Nacionales e internacionales",
+     "Consulta Dr. Atencio": "Sí",
+     "Horario presencial": "12 pm a 7 pm, programada, lunes a sábado",
+     "Citas virtuales": "Sí",
+     "Cirugía programada": "Sí",
+     "Emergencia": "No",
+     "Ambulancia": "Sí",
+     "Banco de sangre": "Sí, tipo II",
+     "UCI": "Sí",
+     "Torre laparoscópica": "Stryker, modelo 1699, cámara StrykeCam 4K",
+     "Hospitalización": "1 día"
+    }
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cuándo es necesaria la cirugía de vesícula?",
+    "a": "Se recomienda cuando hay cálculos (piedras), inflamación, dolor frecuente o infecciones que afectan el funcionamiento normal de la vesícula."
+   },
+   {
+    "q": "¿La cirugía de vesícula es peligrosa?",
+    "a": "Es un procedimiento seguro y muy común. Generalmente se realiza por laparoscopía, lo que reduce riesgos y permite una recuperación más rápida."
+   },
+   {
+    "q": "¿Cuánto tiempo dura la recuperación?",
+    "a": "La mayoría de los pacientes puede retomar sus actividades normales en pocos días, aunque se recomienda evitar esfuerzos físicos intensos durante algunas semanas."
+   },
+   {
+    "q": "¿Qué puedo comer después de la cirugía?",
+    "a": "Al inicio se recomienda una dieta baja en grasas y de fácil digestión. Con el tiempo, la mayoría de las personas puede volver a su alimentación habitual."
+   },
+   {
+    "q": "¿Se puede vivir sin vesícula?",
+    "a": "Sí, el cuerpo se adapta sin problemas. La bilis pasa directamente al intestino, permitiendo una digestión normal en la mayoría de los casos."
+   }
+  ]
+ }
+}

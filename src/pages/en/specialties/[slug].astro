@@ -1,0 +1,6 @@
+---
+import V from '../../../components/views/Specialties.astro';
+import { specialties } from '../../../data/catalog';
+export function getStaticPaths() { return specialties.map((s) => ({ params: { slug: s.slugEn }, props: { id: s.id } })); }
+---
+<V lang="en" id={Astro.props.id} />

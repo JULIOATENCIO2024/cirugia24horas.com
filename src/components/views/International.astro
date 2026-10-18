@@ -1,0 +1,126 @@
+---
+// HUB DE TURISMO MÉDICO: cómo funciona, viaje, alojamiento, traslados, ingreso al Perú, garantías, seguros y seguimiento.
+import Base from '../../layouts/Base.astro';
+import Faq from '../Faq.astro';
+import { site, pen, usd, waLink, type Lang } from '../../data/site';
+import { procedures } from '../../data/catalog';
+import { minPrice, guides, url, pages } from '../../lib/data';
+import { L } from '../../lib/i18n';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = L(lang);
+const es = lang === 'es';
+const top = ['manga-gastrica', 'vesicula', 'protesis-de-rodilla', 'protesis-de-cadera', 'tratamiento-de-ginecomastia', 'cirugia-de-hernia-inguinal', 'rinoplastia', 'cirugia-de-aumento-de-mamas', 'lipoescultura', 'prostata']
+  .map((id) => procedures.find((p) => p.id === id)!);
+const abroad = guides.filter((g) => g.lang === lang && g.index === 3);
+const title = es ? 'Cirugía en Perú para extranjeros: cómo funciona | Cirugía 24 Horas' : 'Surgery in Peru for International Patients | Cirugía 24 Horas';
+const description = es
+  ? 'Opérate en Lima desde el extranjero: evaluación a distancia, cotización en dólares, traslados, alojamiento y seguimiento al volver. Coordinador dedicado.'
+  : 'Have surgery in Lima, Peru from abroad: remote evaluation, quote in US dollars, airport transfers, lodging and remote follow-up. Dedicated coordinator.';
+const steps = es ? [
+  ['Envía tu caso', 'Por WhatsApp o correo: diagnóstico, exámenes e imágenes. Respondemos en español o inglés.'],
+  ['Evaluación a distancia sin costo', 'El especialista revisa tu caso por videollamada y confirma si la cirugía está indicada.'],
+  ['Cotización cerrada', 'Recibes el precio de cada clínica en dólares y soles, qué incluye y los días que debes quedarte.'],
+  ['Planifica tu viaje', 'Te sugerimos fechas y te ayudamos con alojamiento cercano y traslados desde el aeropuerto Jorge Chávez.'],
+  ['Cirugía en Lima', 'Exámenes preoperatorios, consulta presencial, cirugía y controles iniciales antes de tu vuelo de regreso.'],
+  ['Seguimiento a distancia', 'Controles por videollamada con tu cirujano y un plan escrito para tu médico en tu país.'],
+] : [
+  ['Send your case', 'On WhatsApp or by email: diagnosis, tests and imaging. We reply in English or Spanish.'],
+  ['Free remote evaluation', 'The specialist reviews your case by video call and confirms whether surgery is indicated.'],
+  ['Fixed written quote', 'You receive the price at each clinic in US dollars and soles, what is included and how many days to stay.'],
+  ['Plan your trip', 'We suggest dates and help with nearby lodging and transfers from Jorge Chávez International Airport (LIM).'],
+  ['Surgery in Lima', 'Pre-op tests, in-person consultation, surgery and the first check-ups before your flight home.'],
+  ['Remote follow-up', 'Video check-ups with your surgeon and a written plan for your doctor back home.'],
+];
+const faqs = es ? [
+  { q: '¿Necesito visa para operarme en Perú?', a: 'Depende de tu nacionalidad. Muchos países de América y Europa pueden ingresar al Perú como turistas sin visa por estadías cortas. Verifica los requisitos vigentes con el consulado peruano o en gob.pe antes de comprar tus pasajes.' },
+  { q: '¿Cuántos días debo quedarme en Lima?', a: 'Depende de la cirugía y de tu evolución. Para procedimientos laparoscópicos simples suele bastar una a dos semanas; para prótesis o cirugía bariátrica, más tiempo. El especialista te indica la estadía recomendada en la cotización.' },
+  { q: '¿Puedo pagar en dólares?', a: 'Te enviamos la cotización en soles y su equivalente referencial en dólares. Las formas de pago y la moneda se confirman por escrito con la clínica antes de programar la cirugía.' },
+  { q: '¿Puedo viajar con un acompañante?', a: 'Sí, y lo recomendamos. Algunas clínicas ofrecen habitación privada con espacio para acompañante; te lo indicamos en la cotización.' },
+  { q: '¿Qué pasa si tengo una complicación después de volver?', a: 'Mantienes contacto con tu cirujano para controles a distancia y te entregamos un informe para tu médico local. Te recomendamos contratar un seguro de viaje que cubra complicaciones médicas.' },
+  { q: '¿Cuándo puedo volar después de la cirugía?', a: 'Lo define el cirujano según el procedimiento y tu recuperación. En general se evita volar los primeros días tras una cirugía abdominal y más tiempo en cirugías mayores, por el riesgo de trombosis.' },
+] : [
+  { q: 'Do I need a visa to have surgery in Peru?', a: 'It depends on your nationality. Citizens of the US, Canada, the UK and the EU can usually enter Peru as tourists without a visa for short stays. Check the current requirements with the Peruvian consulate or gob.pe before booking flights.' },
+  { q: 'How long do I need to stay in Lima?', a: 'It depends on the procedure and your recovery. Simple laparoscopic procedures often need one to two weeks; joint replacement or bariatric surgery need longer. The specialist states the recommended stay in your quote.' },
+  { q: 'Can I pay in US dollars?', a: 'Your quote shows the price in Peruvian soles with a reference amount in US dollars. Payment methods and currency are confirmed in writing with the clinic before your surgery is scheduled.' },
+  { q: 'Can I bring a companion?', a: 'Yes, and we recommend it. Some clinics offer private rooms with space for a companion; this is noted in your quote.' },
+  { q: 'What if I have a complication after returning home?', a: 'You stay in touch with your surgeon for remote check-ups and receive a medical report for your local doctor. We recommend travel insurance that covers medical complications.' },
+  { q: 'When can I fly after surgery?', a: 'Your surgeon decides based on the procedure and your recovery. Flying is usually avoided in the first days after abdominal surgery, and for longer after major surgery, because of the risk of blood clots.' },
+  { q: 'How much can I save compared with the US?', a: 'Savings depend on the procedure and the clinic you choose. Compare our published prices in US dollars with the quotes you have at home; the full price table is on our prices page.' },
+];
+---
+<Base lang={lang} title={title} description={description} alt={pages.international} crumbs={[{ name: s.international, href: pages.international[lang] }]} faqs={faqs} waMsg={es ? 'Hola, vivo fuera del Perú y quiero cotizar una cirugía.' : 'Hello, I live outside Peru and would like a quote for surgery in Lima.'}>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">{es ? 'Turismo médico · Lima, Perú' : 'Medical travel · Lima, Peru'}</span>
+      <h1>{es ? <>Opérate en Perú <span class="hl">desde cualquier país</span></> : <>Surgery in Peru <span class="hl">for international patients</span></>}</h1>
+      <p class="answer"><b>{s.tldr}:</b> {es
+        ? 'Pacientes de EE. UU., Europa y Latinoamérica eligen Lima por el ahorro frente a sus países y por la atención de especialistas colegiados. Evaluamos tu caso a distancia sin costo, te enviamos una cotización cerrada en soles y dólares, y coordinamos clínica, traslados, alojamiento y seguimiento.'
+        : 'Patients from the US, Canada, Europe and Latin America choose Lima for the savings compared with their home countries and for care by licensed specialists. We review your case remotely for free, send a fixed quote in US dollars and soles, and coordinate the clinic, airport transfers, lodging and follow-up.'}</p>
+      <div class="cta">
+        <a class="btn btn-wa" href={waLink(es ? 'Hola, vivo fuera del Perú y quiero cotizar una cirugía.' : 'Hello, I live outside Peru and would like a quote for surgery in Lima.')} data-cta="whatsapp" target="_blank" rel="noopener">{es ? 'Enviar mi caso por WhatsApp' : 'Send my case on WhatsApp'}</a>
+        <a class="btn btn-out" href={`mailto:${site.email}?subject=${encodeURIComponent(es ? 'Paciente internacional' : 'International patient')}`} data-cta="email">{site.email}</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>{es ? 'Cómo funciona, paso a paso' : 'How it works, step by step'}</h2>
+      <div class="steps">{steps.map(([b, t]) => <div class="step"><div><b>{b}</b><p>{t}</p></div></div>)}</div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>{es ? 'Precios para pacientes internacionales' : 'Prices for international patients'}</h2>
+      <p class="sub">{es ? 'Precio desde la clínica de menor costo; en cada procedimiento ves las cinco alternativas.' : 'Starting price at the lowest-cost clinic; each procedure page shows all clinic options.'}</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">{es ? 'Procedimiento' : 'Procedure'}</th><th scope="col">{es ? 'Desde (US$)' : 'From (US$)'}</th><th scope="col">{es ? 'Desde (S/)' : 'From (S/)'}</th></tr></thead>
+          <tbody>{top.map((p) => <tr><td><a href={url.proc(p, lang)}><b>{es ? p.es : p.en}</b></a></td><td class="pr">{usd(minPrice(p.id))}</td><td>{pen(minPrice(p.id))}</td></tr>)}</tbody>
+        </table>
+      </div>
+      <p class="note">{s.fxNote(site.fx.usd, site.fx.date)} <a href={pages.prices[lang]}>{es ? 'Ver todos los precios' : 'See all prices'}</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap grid three">
+      {(es ? [
+        ['Viaje y llegada', 'Lima tiene vuelos directos desde EE. UU., Europa y Latinoamérica al aeropuerto Jorge Chávez. Te sugerimos llegar al menos un día antes de la consulta presencial.'],
+        ['Alojamiento', 'Te recomendamos hospedajes cercanos a la clínica elegida (San Isidro, Miraflores, San Borja o Surco), con facilidades para tu recuperación.'],
+        ['Traslados', 'Coordinamos tu traslado del aeropuerto al alojamiento y a la clínica en los días de exámenes, cirugía y controles.'],
+        ['Idioma', 'Coordinación en español e inglés. Si lo necesitas, te ayudamos a contar con apoyo de traducción durante la consulta.'],
+        ['Seguros', 'Recomendamos un seguro de viaje que cubra complicaciones médicas. Los seguros de salud extranjeros no suelen cubrir cirugía programada en otro país: consúltalo con tu aseguradora.'],
+        ['Seguridad', 'Consentimiento informado, evaluación preoperatoria, información de riesgos del viaje y plan de seguimiento por escrito.'],
+      ] : [
+        ['Travel and arrival', 'Lima has direct flights from the US, Europe and Latin America to Jorge Chávez International Airport (LIM). We suggest arriving at least one day before your in-person consultation.'],
+        ['Lodging', 'We recommend accommodation near your chosen clinic (San Isidro, Miraflores, San Borja or Surco) suited to your recovery.'],
+        ['Transfers', 'We coordinate your transfer from the airport to your lodging and to the clinic on test, surgery and check-up days.'],
+        ['Language', 'Coordination in English and Spanish. If you need it, we help arrange interpreting during your consultation.'],
+        ['Insurance', 'We recommend travel insurance that covers medical complications. Foreign health plans rarely cover elective surgery abroad: check with your insurer.'],
+        ['Safety', 'Informed consent, pre-operative evaluation, information on travel risks after surgery and a written follow-up plan.'],
+      ]).map(([b, t]) => <div class="card"><h3>{b}</h3><p>{t}</p></div>)}
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap panel">
+      <h2>{es ? 'Nuestras garantías' : 'Our commitments'}</h2>
+      <ul>{(es ? ['Evaluación inicial sin costo', 'Precio cerrado y por escrito por clínica antes de viajar', 'Coordinador dedicado durante todo el proceso', 'Sin pagos adelantados antes de tu evaluación', 'El mismo equipo quirúrgico en cualquier sede', 'Médicos con CMP y RNE verificables']
+        : ['Free initial evaluation', 'Fixed, written price per clinic before you travel', 'Dedicated coordinator throughout the process', 'No upfront payments before your evaluation', 'The same surgical team at every clinic', 'Doctors with verifiable CMP and RNE numbers']).map((x) => <li>{x}</li>)}</ul>
+      <p style="margin-top:12px">{es ? 'No garantizamos resultados: la indicación y el pronóstico los define el especialista tras evaluarte.' : 'We do not guarantee outcomes: the specialist decides the indication and prognosis after evaluating you.'}</p>
+    </div>
+  </section>
+
+  <Faq faqs={faqs} title={s.faq} />
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>{es ? 'Guías por cirugía para pacientes del extranjero' : 'Surgery guides for international patients'}</h2>
+      <ul class="links">{abroad.map((g) => <li><a href={url.guide(g, lang)}>{g.title}</a></li>)}</ul>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,84 @@
+---
+// Páginas legales ES/EN: privacidad (Ley 29733 + RGPD para visitantes de Europa), términos, política editorial y aviso médico.
+import Base from '../../layouts/Base.astro';
+import { site, doctorBySlug, type Lang } from '../../data/site';
+import { pages } from '../../lib/data';
+
+type Kind = 'privacy' | 'terms' | 'editorial' | 'disclaimer';
+interface Props { lang: Lang; kind: Kind }
+const { lang, kind } = Astro.props;
+const es = lang === 'es';
+const rev = doctorBySlug(site.reviewer);
+const ruc = site.ruc ? `, RUC ${site.ruc}` : '';
+
+const docs: Record<Kind, { es: [string, string, string[]]; en: [string, string, string[]] }> = {
+  privacy: {
+    es: ['Política de privacidad', 'Cómo tratamos tus datos personales y de salud (Ley N° 29733).', [
+      `<p>El responsable del tratamiento es ${site.legalName}${ruc}, con domicilio en ${site.address}, ${site.district}, Lima, Perú (en adelante, Cirugía 24 Horas).</p>`,
+      '<h2>Qué datos tratamos</h2><p>Los que nos envías para coordinar tu atención: nombre, teléfono, correo, país, y la información médica que compartas (diagnóstico, exámenes, imágenes). Los datos de salud son datos sensibles y solo se usan con tu consentimiento expreso.</p>',
+      '<h2>Para qué</h2><p>Evaluar tu caso, enviarte cotizaciones, coordinar con el cirujano y la clínica que elijas, y darte seguimiento. No vendemos tus datos ni usamos tu información de salud para publicidad.</p>',
+      '<h2>Con quién los compartimos</h2><p>Con el médico tratante y la clínica de la red que elijas, solo lo necesario para tu atención. Si estás fuera del Perú, la comunicación implica una transferencia internacional que autorizas al escribirnos.</p>',
+      '<h2>Cookies</h2><p>Usamos Google Analytics y Google Ads para medir visitas y contactos, solo si aceptas el banner de cookies. Puedes cambiar tu decisión borrando las cookies de este sitio.</p>',
+      `<h2>Tus derechos</h2><p>Puedes ejercer tus derechos de acceso, rectificación, cancelación y oposición (ARCO) escribiendo a ${site.email}. Si visitas el sitio desde la Unión Europea, también te asisten los derechos del RGPD. Puedes acudir a la Autoridad Nacional de Protección de Datos Personales del Perú.</p>`,
+      '<h2>Conservación</h2><p>Conservamos tus datos mientras dure la relación de atención y los plazos que exige la normativa sanitaria.</p>',
+    ]],
+    en: ['Privacy policy', 'How we handle your personal and health data.', [
+      `<p>The data controller is ${site.legalName}${ruc}, ${site.address}, ${site.district}, Lima, Peru ("Cirugía 24 Horas"). We comply with Peru’s Personal Data Protection Law (Law No. 29733) and, for visitors from the European Union, the GDPR.</p>`,
+      '<h2>Data we process</h2><p>What you send us to coordinate your care: name, phone, email, country and any medical information you share (diagnosis, tests, imaging). Health data is sensitive and is used only with your explicit consent.</p>',
+      '<h2>Purpose</h2><p>To review your case, send quotes, coordinate with the surgeon and clinic you choose, and follow up. We never sell your data or use your health information for advertising.</p>',
+      '<h2>Who we share it with</h2><p>The treating doctor and the partner clinic you choose, only as needed for your care. If you are outside Peru, communicating with us involves an international data transfer that you authorize by contacting us.</p>',
+      '<h2>Cookies</h2><p>We use Google Analytics and Google Ads to measure visits and contacts, only if you accept the cookie banner. You can change your choice by clearing this site’s cookies.</p>',
+      `<h2>Your rights</h2><p>You may request access, rectification, deletion or objection by writing to ${site.email}. You may also contact Peru’s National Authority for Personal Data Protection or your local data protection authority.</p>`,
+      '<h2>Retention</h2><p>We keep your data for the duration of your care and the periods required by health regulations.</p>',
+    ]],
+  },
+  terms: {
+    es: ['Términos y condiciones', 'Condiciones de uso del sitio y del servicio de coordinación quirúrgica.', [
+      `<p>${site.name} es un servicio de coordinación quirúrgica de ${site.legalName}. Orientamos al paciente y coordinamos su atención con cirujanos colegiados y clínicas de la red; los actos médicos los realizan los médicos tratantes y las clínicas, bajo su responsabilidad profesional.</p>`,
+      '<h2>Precios</h2><p>Los precios publicados son referenciales, en soles (S/), y corresponden a cada clínica. El monto en dólares es una conversión referencial. El precio final se entrega cerrado y por escrito tras la evaluación médica, e indica qué incluye.</p>',
+      '<h2>Indicación médica</h2><p>La necesidad y el tipo de cirugía los define el especialista tras evaluarte. Ningún contenido del sitio constituye un diagnóstico ni garantiza resultados.</p>',
+      '<h2>Pagos</h2><p>No solicitamos pagos antes de la evaluación. Las formas de pago, la moneda y las condiciones de reprogramación se confirman por escrito con la clínica elegida.</p>',
+      '<h2>Contenido</h2><p>Los textos y tablas del sitio pueden citarse con mención de la fuente y enlace a cirugia24horas.com.</p>',
+    ]],
+    en: ['Terms and conditions', 'Terms of use of the website and the surgical coordination service.', [
+      `<p>${site.name} is a surgical coordination service of ${site.legalName}, Lima, Peru. We guide patients and coordinate their care with licensed surgeons and partner clinics; medical acts are performed by the treating doctors and clinics under their professional responsibility.</p>`,
+      '<h2>Prices</h2><p>Published prices are for reference, in Peruvian soles (S/), and belong to each clinic. US dollar amounts are reference conversions. Your final price is given fixed and in writing after the medical evaluation, stating what is included.</p>',
+      '<h2>Medical indication</h2><p>Whether you need surgery, and which one, is decided by the specialist after evaluating you. Nothing on this site is a diagnosis or a guarantee of results.</p>',
+      '<h2>Payments</h2><p>We do not request payment before the evaluation. Payment methods, currency and rescheduling terms are confirmed in writing with the chosen clinic.</p>',
+      '<h2>Content</h2><p>Texts and tables on this site may be quoted with attribution and a link to cirugia24horas.com.</p>',
+    ]],
+  },
+  editorial: {
+    es: ['Política editorial', 'Cómo escribimos y revisamos el contenido médico.', [
+      `<p>El contenido de salud de este sitio es educativo. Lo redacta el equipo de ${site.name} y lo revisa ${rev.name} (CMP ${rev.cmp}, RNE ${rev.rne}) antes de publicarse. Cada artículo indica su fecha de revisión.</p>`,
+      '<h2>Principios</h2><ul><li>Información basada en la práctica clínica y en guías médicas reconocidas.</li><li>Sin promesas de curación ni resultados garantizados.</li><li>Precios con fuente (tarifas publicadas por cada clínica) y fecha.</li><li>Testimonios y fotos solo reales y con consentimiento escrito.</li></ul>',
+      `<h2>Correcciones</h2><p>Si encuentras un error, escríbenos a ${site.email}; lo revisamos y actualizamos.</p>`,
+    ]],
+    en: ['Editorial policy', 'How we write and review medical content.', [
+      `<p>Health content on this site is educational. It is written by the ${site.name} team and reviewed by ${rev.name} (CMP ${rev.cmp}, RNE ${rev.rne}) before publication. Each article shows its review date. English guides are translated from the reviewed Spanish originals.</p>`,
+      '<h2>Principles</h2><ul><li>Information based on clinical practice and recognized medical guidelines.</li><li>No promises of cures or guaranteed results.</li><li>Prices with a source (rates published by each clinic) and a date.</li><li>Testimonials and photos only when real and with written consent.</li></ul>',
+      `<h2>Corrections</h2><p>If you find an error, write to ${site.email}; we will review and update it.</p>`,
+    ]],
+  },
+  disclaimer: {
+    es: ['Aviso médico', 'Alcance de la información de salud publicada.', [
+      '<p>La información de este sitio es referencial y no reemplaza la consulta con un médico. No te automediques ni postergues una atención por algo que leíste aquí.</p>',
+      '<p>La indicación quirúrgica la define el especialista tras evaluarte. Los resultados varían de persona a persona y no se garantizan.</p>',
+      '<p><b>Ante una emergencia</b> (dolor intenso, sangrado, fiebre alta, dificultad para respirar) acude al servicio de emergencia más cercano.</p>',
+    ]],
+    en: ['Medical disclaimer', 'Scope of the health information on this site.', [
+      '<p>The information on this site is for reference only and does not replace a consultation with a doctor. Do not self-medicate or delay care because of something you read here.</p>',
+      '<p>The specialist decides the surgical indication after evaluating you. Results vary from person to person and are not guaranteed.</p>',
+      '<p><b>In an emergency</b> (severe pain, bleeding, high fever, difficulty breathing) go to the nearest emergency department.</p>',
+    ]],
+  },
+};
+const [h1, description, body] = docs[kind][lang];
+---
+<Base lang={lang} title={`${h1} | ${site.name}`} description={description} alt={pages[kind]} crumbs={[{ name: h1, href: pages[kind][lang] }]} type="WebPage" reviewed={false}>
+  <article class="wrap prose" style="padding:24px 16px 36px">
+    <h1>{h1}</h1>
+    <Fragment set:html={body.join('')} />
+    <p class="byline">{es ? 'Última actualización' : 'Last updated'}: {site.fx.date}</p>
+  </article>
+</Base>

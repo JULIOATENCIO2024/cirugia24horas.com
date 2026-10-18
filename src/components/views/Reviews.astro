@@ -1,0 +1,43 @@
+---
+// Opiniones: solo reales y con consentimiento (Ley 29733). Mientras no haya reseñas autorizadas por escrito no se
+// publican testimonios individuales ni AggregateRating; se explica la política y se invita a opinar en Google.
+import Base from '../../layouts/Base.astro';
+import { waLink, type Lang } from '../../data/site';
+import { pages } from '../../lib/data';
+import { L } from '../../lib/i18n';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = L(lang);
+const es = lang === 'es';
+const title = es ? 'Opiniones de pacientes | Cirugía 24 Horas' : 'Patient Reviews | Cirugía 24 Horas';
+const description = es
+  ? 'Opiniones de pacientes operados con Cirugía 24 Horas en Lima. Publicamos solo testimonios reales con consentimiento escrito.'
+  : 'Reviews from patients who had surgery with Cirugía 24 Horas in Lima, Peru. We only publish real testimonials with written consent.';
+---
+<Base lang={lang} title={title} description={description} alt={pages.reviews} crumbs={[{ name: s.reviews, href: pages.reviews[lang] }]} type="WebPage" reviewed={false}>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">{s.reviews}</span>
+      <h1>{es ? 'Opiniones de nuestros pacientes' : 'What our patients say'}</h1>
+      <p class="lead">{es
+        ? 'Aquí publicamos testimonios por procedimiento solo cuando el paciente lo autoriza por escrito.'
+        : 'We publish testimonials by procedure here only when the patient authorizes it in writing.'}</p>
+    </div>
+  </section>
+  <section>
+    <div class="wrap grid">
+      <div class="card">
+        <h3>{es ? 'Nuestra política' : 'Our policy'}</h3>
+        <p>{es
+          ? 'No publicamos opiniones inventadas, fotos de antes y después ni casos sin consentimiento escrito. Cada experiencia es individual y no garantiza el mismo resultado en otra persona.'
+          : 'We never publish made-up reviews, before-and-after photos or cases without written consent. Every experience is individual and does not guarantee the same outcome for anyone else.'}</p>
+      </div>
+      <div class="card">
+        <h3>{es ? '¿Te operaste con nosotros?' : 'Did you have surgery with us?'}</h3>
+        <p>{es ? 'Cuéntanos tu experiencia. Si nos autorizas, la publicamos con tu nombre o iniciales.' : 'Tell us about your experience. With your permission, we will publish it with your name or initials.'}</p>
+        <a class="more" href={waLink(es ? 'Hola, quiero dejar mi opinión sobre mi cirugía.' : 'Hello, I would like to share a review of my surgery.')} data-cta="whatsapp" target="_blank" rel="noopener">{es ? 'Enviar mi opinión' : 'Send my review'} →</a>
+      </div>
+    </div>
+  </section>
+</Base>

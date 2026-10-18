@@ -1,0 +1,347 @@
+---
+// Plantilla única ES/EN: CSS inline, fuentes autoalojadas (Raleway + Roboto, las de la web actual), sin framework JS.
+// Colores del logo (manos verde #89CD35 y celeste #01CCF3, corazón rojo) + azul de botones #006BFF y marino #112038
+// de la web actual. Medición: GA4 + Google Ads con Consent Mode v2 (denegado hasta que la persona acepte el banner).
+import { site, waLink, telLink, fitTitle, fitDesc, type Lang } from '../data/site';
+import { buildSchema, type Crumb } from '../lib/schema';
+import { L } from '../lib/i18n';
+import { pages, specialties, url } from '../lib/data';
+import type { Faq } from '../data/catalog';
+
+interface Props {
+  lang: Lang;
+  title: string; // ≤ 60 caracteres
+  description: string; // ≤ 160 caracteres
+  /** Par de idioma para hreflang: { es: '/ruta/', en: '/en/route/' }. Sin par = solo autorreferencia. */
+  alt?: { es?: string; en?: string };
+  crumbs?: Crumb[];
+  faqs?: Faq[];
+  main?: Record<string, unknown>[];
+  page?: Record<string, unknown>;
+  type?: string;
+  reviewed?: boolean;
+  noindex?: boolean;
+  waMsg?: string;
+  ogImage?: string;
+}
+const { lang, alt = {}, crumbs, faqs, main, page, type, reviewed, noindex = false, waMsg, ogImage = '/og.jpg' } = Astro.props;
+// La marca va al final del title solo si cabe en 60 caracteres; la description se corta en 160.
+const raw = Astro.props.title.replace(/ \| Cirugía 24 Horas$/, '');
+const title = fitTitle(raw);
+const description = fitDesc(Astro.props.description);
+const s = L(lang);
+const path = Astro.url.pathname;
+const canonical = new URL(path, site.url).href;
+const other = lang === 'es' ? alt.en : alt.es;
+const hreflang = alt.es && alt.en ? [['es', alt.es], ['en', alt.en], ['x-default', alt.en]] : [];
+const schema = noindex ? null : buildSchema({ path, lang, title, description, type, faqs, crumbs, main, page, reviewed });
+const wa = waLink(waMsg ?? s.waGeneric);
+const p = (k: keyof typeof pages) => pages[k][lang];
+const nav = [
+  [s.specialties, p('specialties')], [s.prices, p('prices')], [s.international, p('international')], [s.clinics, p('clinics')],
+  [s.doctors, p('doctors')], [s.guides, p('guides')], [s.contact, p('contact')],
+];
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<meta name="description" content={description}>
+<link rel="canonical" href={canonical}>
+<meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large'}>
+{hreflang.map(([l, h]) => <link rel="alternate" hreflang={l} href={new URL(h, site.url).href}>)}
+<meta name="theme-color" content="#006BFF">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/raleway-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/roboto-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:site_name" content={site.name}>
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:type" content="website">
+<meta property="og:locale" content={lang === 'es' ? 'es_PE' : 'en_US'}>
+<meta property="og:locale:alternate" content={lang === 'es' ? 'en_US' : 'es_PE'}>
+<meta property="og:url" content={canonical}>
+<meta property="og:image" content={new URL(ogImage, site.url).href}>
+<meta name="twitter:card" content="summary_large_image">
+<style is:global>
+@font-face{font-family:Raleway;font-weight:700;font-display:swap;src:url(/fonts/raleway-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Raleway;font-weight:800;font-display:swap;src:url(/fonts/raleway-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:Roboto;font-weight:400;font-display:swap;src:url(/fonts/roboto-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Roboto;font-weight:700;font-display:swap;src:url(/fonts/roboto-latin-700-normal.woff2) format("woff2")}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#006BFF;--blue-900:#0052C4;--navy:#112038;--navy-2:#1B2F52;--cyan:#01CCF3;--green:#89CD35;--green-900:#4E8A14;--red:#E63946;--sky:#E6F4FF;--bg:#F5F9FD;--ink:#1F2A3A;--mut:#566273;--line:#D9E4EF;--head:Raleway,"Segoe UI",Arial,sans-serif}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:Roboto,"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.62;background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue)}
+h1,h2,h3,.btn,.kicker,summary,th,.wm{font-family:var(--head)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;text-decoration:none;border-radius:999px;padding:13px 22px;font-size:15px;line-height:1.15;border:0;cursor:pointer;letter-spacing:.01em}
+.btn-main{background:var(--blue);color:#fff}.btn-main:hover{background:var(--blue-900)}
+.btn-wa{background:#1FAF55;color:#fff}.btn-wa:hover{background:#178F45}
+.btn-out{background:#fff;color:var(--navy);border:2px solid var(--navy);padding:11px 20px}.btn-out:hover{background:var(--sky)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);padding:11px 20px}
+svg{flex:0 0 auto}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40}
+.bar{display:flex;align-items:center;gap:12px;padding:8px 16px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;margin-right:auto}
+.brand img{height:40px;width:auto}
+.wm{font-weight:800;color:var(--navy);font-size:17px;line-height:1;letter-spacing:-.01em;white-space:nowrap}
+@media(max-width:519px){.bar .btn-wa,.wm small{display:none}.brand img{height:34px}.bar{gap:8px}}
+.wm b{color:var(--blue)}
+.wm small{display:block;font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:10.5px;color:var(--mut);letter-spacing:.06em;margin-top:3px;text-transform:uppercase}
+.nav{display:none}
+.lang{font-size:13px;font-weight:700;text-decoration:none;color:var(--navy);border:1px solid var(--line);border-radius:999px;padding:7px 11px;white-space:nowrap}
+.lang:hover{border-color:var(--blue);color:var(--blue)}
+.bar .btn{padding:9px 14px;font-size:14px}
+.menu{position:relative}
+.menu summary{list-style:none;cursor:pointer;font-size:14px;font-weight:700;color:var(--navy);padding:8px 10px;border:1px solid var(--line);border-radius:10px}
+.menu summary::-webkit-details-marker{display:none}
+.menu[open] .drop{display:flex}
+.drop{display:none;flex-direction:column;position:absolute;right:0;top:44px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(17,32,56,.14);padding:8px;min-width:240px}
+.drop a{padding:10px 12px;border-radius:8px;text-decoration:none;color:var(--navy);font-weight:700;font-size:15px}
+.drop a:hover{background:var(--sky)}
+.crumbs{font-size:13px;color:var(--mut);padding-top:12px}
+.crumbs a{text-decoration:none}
+.hero{background:linear-gradient(180deg,var(--sky),#fff);padding:28px 0 26px}
+.kicker{display:inline-flex;align-items:center;gap:6px;background:#fff;color:var(--blue);font-weight:800;font-size:12px;letter-spacing:.07em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:12px;border:1px solid var(--line)}
+h1{font-size:30px;line-height:1.15;color:var(--navy);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;max-width:820px}
+h1 .hl{color:var(--blue)}
+.lead{font-size:17px;color:var(--mut);max-width:700px;margin-bottom:16px}
+.answer{background:#fff;border:1px solid var(--line);border-left:5px solid var(--green);border-radius:0 12px 12px 0;padding:13px 15px;max-width:760px;margin-bottom:18px;font-size:15.5px}
+.answer b{color:var(--navy)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:var(--mut)}
+.chips span{display:flex;align-items:center;gap:6px}
+.chips b{color:var(--navy)}
+section{padding:30px 0}
+section.alt{background:var(--bg)}
+h2{font-size:24px;color:var(--navy);font-weight:800;margin-bottom:12px;letter-spacing:-.015em;line-height:1.2}
+h2::before{content:"";display:block;width:40px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--green),var(--cyan));margin-bottom:10px}
+h3{color:var(--navy);font-weight:700;font-size:17px}
+.sub{color:var(--mut);margin:-4px 0 16px;max-width:760px}
+.prose{max-width:780px}
+.prose p,.prose li{font-size:16px}
+.prose p+p,.prose p+ul,.prose ul+p,.prose p+ol,.prose ol+p,.prose h2+p,.prose h3+p{margin-top:10px}
+.prose h2{margin-top:26px;font-size:21px}.prose h2::before{display:none}
+.prose h3{margin-top:18px}
+.prose ul,.prose ol{padding-left:22px}.prose li+li{margin-top:5px}
+.prose img{border-radius:12px;margin:14px 0}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+.card{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;display:flex;flex-direction:column;gap:6px}
+.card h3 a{text-decoration:none;color:var(--navy)}
+.card p{font-size:15px;color:var(--mut)}
+.card .price-from{font-family:var(--head);font-weight:800;color:var(--blue);font-size:18px}
+.card .price-from small{display:block;font-family:Roboto,Arial,sans-serif;font-weight:400;color:var(--mut);font-size:12.5px}
+.card .more{margin-top:auto;font-weight:700;text-decoration:none;font-size:15px}
+.tag{display:inline-block;align-self:flex-start;font-size:12px;font-weight:700;color:var(--green-900);background:#EFF8E3;border-radius:999px;padding:3px 10px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:#fff;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:680px}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--navy);color:#fff;font-weight:700;font-size:13.5px}
+tbody tr:nth-child(even){background:#FAFCFE}
+tr:last-child td{border-bottom:0}
+td.pr{font-family:var(--head);font-weight:800;color:var(--navy);white-space:nowrap;font-size:15.5px}
+td.pr small{display:block;font-family:Roboto,Arial,sans-serif;font-weight:700;color:var(--blue);font-size:13px}
+td .lvl{display:block;font-size:12.5px;color:var(--mut)}
+.best{display:inline-block;font-size:11px;font-weight:700;background:#EFF8E3;color:var(--green-900);border-radius:999px;padding:2px 8px;margin-top:4px}
+.note{font-size:13.5px;color:var(--mut);margin-top:10px;max-width:880px}
+.steps{display:grid;grid-template-columns:1fr;gap:12px;counter-reset:s}
+.step{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}
+.step::before{counter-increment:s;content:counter(s);flex:0 0 34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--head);font-weight:800}
+.step b{display:block;color:var(--navy)}
+.step p{font-size:15px;color:var(--mut)}
+.split{display:grid;grid-template-columns:1fr;gap:22px;align-items:start}
+.panel{background:var(--navy);color:#fff;border-radius:18px;padding:24px}
+.panel h2{color:#fff}
+.panel p,.panel li{color:#D8E2F0;font-size:15.5px}
+.panel ul{padding-left:20px;margin-top:8px}.panel li+li{margin-top:5px}
+.panel a:not(.btn){color:#fff}
+.docs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.doc{text-align:center;border:1px solid var(--line);border-radius:14px;padding:14px 10px;background:#fff;text-decoration:none;color:var(--ink)}
+.doc img{width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 auto 8px;background:var(--sky)}
+.doc b{display:block;color:var(--navy);font-size:14.5px;line-height:1.3}
+.doc span{display:block;font-size:12.5px;color:var(--mut)}
+details.faq{border:1px solid var(--line);border-radius:12px;padding:0 16px;margin-bottom:10px;background:#fff}
+details.faq summary{cursor:pointer;font-weight:700;color:var(--navy);padding:14px 0;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:10px}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";color:var(--blue);font-size:22px;line-height:1}
+details.faq[open] summary::after{content:"–"}
+details.faq p{color:var(--mut);font-size:15px;padding:0 0 14px}
+.links{list-style:none;display:grid;grid-template-columns:1fr;gap:8px}
+.links a{display:block;border:1px solid var(--line);border-radius:12px;padding:11px 14px;color:var(--navy);font-weight:700;font-size:15px;text-decoration:none;background:#fff}
+.links a:hover{border-color:var(--blue);color:var(--blue)}
+.links a small{display:block;font-weight:400;color:var(--mut);font-size:13px}
+.info{background:var(--sky);border-radius:12px;padding:14px 16px;font-size:15px;max-width:880px;margin-top:14px}
+.byline{font-size:13.5px;color:var(--mut);border-top:1px solid var(--line);padding-top:12px;margin-top:22px}
+.yt{position:relative;border-radius:16px;overflow:hidden;background:#000;aspect-ratio:16/9;max-width:860px}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:8px;padding:8px 12px;background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(17,32,56,.08)}
+.sticky .btn{flex:1;padding:13px 8px;font-size:15px}
+footer{background:var(--navy);color:#C9D5E6;padding:30px 0 96px;font-size:13.5px}
+footer a{color:#fff}
+footer .cols{display:grid;grid-template-columns:1fr;gap:20px}
+footer h3{color:#fff;font-size:14px;margin-bottom:8px}
+footer ul{list-style:none}footer li+li{margin-top:5px}
+footer li a{text-decoration:none}
+footer .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:22px;padding-top:16px}
+footer .legal p+p{margin-top:8px}
+.cookie{position:fixed;left:12px;right:12px;bottom:76px;z-index:50;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(17,32,56,.18);padding:14px;font-size:14px;max-width:560px;display:none}
+.cookie.show{display:block}
+.cookie p{margin-bottom:10px}
+.cookie .row{display:flex;gap:8px;flex-wrap:wrap}
+.cookie .btn{padding:9px 16px;font-size:14px}
+@media(min-width:760px){
+ h1{font-size:42px}.lead{font-size:18px}h2{font-size:28px}
+ .hero{padding:46px 0 40px}
+ .grid{grid-template-columns:repeat(2,1fr)}.grid.three{grid-template-columns:repeat(3,1fr)}
+ .steps{grid-template-columns:repeat(2,1fr)}
+ .links{grid-template-columns:repeat(2,1fr)}
+ .docs{grid-template-columns:repeat(4,1fr)}
+ .split{grid-template-columns:1.15fr .85fr}
+ footer .cols{grid-template-columns:1.4fr 1fr 1fr 1fr}
+ .sticky{display:none}footer{padding-bottom:30px}.cookie{bottom:16px}
+}
+@media(min-width:1060px){
+ .nav{display:flex;gap:2px}.nav a{font-size:14px;font-weight:700;color:var(--navy);text-decoration:none;padding:8px 9px;border-radius:8px}.nav a:hover{background:var(--sky);color:var(--blue)}
+ .menu{display:none}.grid.four{grid-template-columns:repeat(4,1fr)}.steps.four{grid-template-columns:repeat(4,1fr)}
+}
+</style>
+{schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+<script is:inline define:vars={{ ga4: site.ga4Id, ads: site.adsId, labels: site.adsLabels, lang }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  // Consent Mode v2: todo denegado hasta que la persona acepte (Ley 29733 en Perú, RGPD para visitantes de Europa).
+  var saved = null; try { saved = localStorage.getItem('c24-consent'); } catch (e) {}
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
+  if (saved === 'granted') gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' });
+  // gtag.js se carga al terminar `load` (fuera de la ruta crítica, mejor LCP y Quality Score).
+  var load = function () { if (window.__g) return; window.__g = 1; var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga4; document.head.appendChild(s); };
+  if (document.readyState === 'complete') load(); else window.addEventListener('load', load);
+  gtag('js', new Date());
+  gtag('config', ga4, { content_group: lang === 'en' ? 'international' : 'peru' });
+  gtag('config', ads);
+  // Eventos del BUILD: contacto_whatsapp, contacto_llamada, cotizacion_enviada y lead_internacional (EN o hub internacional).
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('[data-cta]');
+    if (!a) return;
+    var type = a.getAttribute('data-cta');
+    var name = { whatsapp: 'contacto_whatsapp', call: 'contacto_llamada' }[type] || 'contacto_' + type;
+    gtag('event', name, { page_path: location.pathname, page_language: lang });
+    if (lang === 'en' || /internacional/.test(location.pathname)) gtag('event', 'lead_internacional', { method: type, page_path: location.pathname });
+    if (labels[type]) gtag('event', 'conversion', { send_to: ads + '/' + labels[type] });
+  });
+</script>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="brand" href={p('home')} aria-label={`${site.name} · ${s.home}`}>
+      <img src="/img/logo.webp" alt="" width="66" height="40">
+      <span class="wm">Cirugía <b>24</b> Horas<small>{lang === 'es' ? 'Cirugía en Perú · Lima' : 'Global surgery · Peru'}</small></span>
+    </a>
+    <nav class="nav" aria-label={s.menu}>{nav.map(([n, h]) => <a href={h}>{n}</a>)}</nav>
+    {other ? <a class="lang" href={other} hreflang={lang === 'es' ? 'en' : 'es'} aria-label={s.switchLabel}>{lang === 'es' ? 'EN' : 'ES'}</a>
+           : <a class="lang" href={lang === 'es' ? '/en/' : '/'} hreflang={lang === 'es' ? 'en' : 'es'}>{lang === 'es' ? 'EN' : 'ES'}</a>}
+    <a class="btn btn-wa" href={wa} data-cta="whatsapp" target="_blank" rel="noopener">{s.whatsapp}</a>
+    <details class="menu">
+      <summary>{s.menu}</summary>
+      <div class="drop">{nav.map(([n, h]) => <a href={h}>{n}</a>)}<a href={p('how')}>{s.how}</a></div>
+    </details>
+  </div>
+</header>
+
+<main>
+  {crumbs?.length && (
+    <nav class="wrap crumbs" aria-label={s.breadcrumb}>
+      <a href={p('home')}>{s.home}</a>
+      {crumbs.map((c, i) => (i === crumbs.length - 1 ? <span> › {c.name}</span> : <span> › <a href={c.href}>{c.name}</a></span>))}
+    </nav>
+  )}
+  <slot />
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>{site.name}</h3>
+        <p>{lang === 'es'
+          ? 'Coordinación quirúrgica en Lima, Perú: el mismo equipo de cirujanos opera en cinco clínicas de distinto nivel de precio. Atendemos a pacientes de todo el Perú y del extranjero.'
+          : 'Surgical coordination in Lima, Peru: the same surgical team operates in five clinics at different price levels. We care for patients from all over Peru and abroad.'}</p>
+        <p style="margin-top:8px">{site.address}, {site.district}, {site.city} · <a href={telLink()} data-cta="call">{site.phoneDisplay}</a> · <a href={`mailto:${site.email}`}>{site.email}</a></p>
+        <p style="margin-top:8px">{site.hours[lang]}</p>
+      </div>
+      <div>
+        <h3>{s.specialties}</h3>
+        <ul>{specialties.map((x) => <li><a href={url.spec(x.id, lang)}>{lang === 'es' ? x.es : x.en}</a></li>)}</ul>
+      </div>
+      <div>
+        <h3>{lang === 'es' ? 'Para pacientes' : 'For patients'}</h3>
+        <ul>
+          <li><a href={p('prices')}>{s.prices}</a></li>
+          <li><a href={p('international')}>{s.international}</a></li>
+          <li><a href={p('how')}>{s.how}</a></li>
+          <li><a href={p('clinics')}>{s.clinics}</a></li>
+          <li><a href={p('doctors')}>{s.doctors}</a></li>
+          <li><a href={p('reviews')}>{s.reviews}</a></li>
+          <li><a href={p('guides')}>{s.guides}</a></li>
+          {lang === 'es' && <li><a href="/blog/">Blog</a></li>}
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href={p('privacy')}>{lang === 'es' ? 'Privacidad (Ley 29733)' : 'Privacy policy'}</a></li>
+          <li><a href={p('terms')}>{lang === 'es' ? 'Términos y condiciones' : 'Terms and conditions'}</a></li>
+          <li><a href={p('editorial')}>{lang === 'es' ? 'Política editorial' : 'Editorial policy'}</a></li>
+          <li><a href={p('disclaimer')}>{lang === 'es' ? 'Aviso médico' : 'Medical disclaimer'}</a></li>
+          <li><a href={`${p('contact')}#libro-de-reclamaciones`}>{lang === 'es' ? 'Libro de Reclamaciones' : 'Complaints book (Peru)'}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>{s.disclaimer}</p>
+      <p>© {year} {site.name} · {site.legalName}{site.ruc && ` · RUC ${site.ruc}`}</p>
+    </div>
+  </div>
+</footer>
+
+<nav class="sticky" aria-label={s.contact}>
+  <a class="btn btn-out" href={telLink()} data-cta="call">{s.call}</a>
+  <a class="btn btn-wa" href={wa} data-cta="whatsapp" target="_blank" rel="noopener">{s.whatsapp}</a>
+</nav>
+
+<div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Cookies">
+  <p>{lang === 'es'
+    ? 'Usamos cookies de medición (Google Analytics y Google Ads) solo si las aceptas. Tus datos de salud nunca se usan para publicidad.'
+    : 'We use measurement cookies (Google Analytics and Google Ads) only if you accept them. Your health data is never used for advertising.'}
+    {' '}<a href={p('privacy')}>{lang === 'es' ? 'Más información' : 'Learn more'}</a></p>
+  <div class="row">
+    <button class="btn btn-main" type="button" data-consent="granted">{lang === 'es' ? 'Aceptar' : 'Accept'}</button>
+    <button class="btn btn-out" type="button" data-consent="denied">{lang === 'es' ? 'Rechazar' : 'Reject'}</button>
+  </div>
+</div>
+<script is:inline>
+  (function () {
+    var box = document.getElementById('cookie'), v = null;
+    try { v = localStorage.getItem('c24-consent'); } catch (e) {}
+    if (!v) box.classList.add('show');
+    box.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-consent]'); if (!b) return;
+      var c = b.getAttribute('data-consent');
+      try { localStorage.setItem('c24-consent', c); } catch (e) {}
+      if (c === 'granted') gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' });
+      box.classList.remove('show');
+    });
+  })();
+</script>
+</body>
+</html>

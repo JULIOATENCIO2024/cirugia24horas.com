@@ -1,0 +1,10 @@
+---
+// /blog/ del WordPress (misma URL): índice de los 133 artículos migrados, más recientes primero.
+import Base from '../../layouts/Base.astro';
+import { blogPosts } from '../../lib/data';
+const list = [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
+---
+<Base lang="es" title="Blog de salud y cirugía | Cirugía 24 Horas" description="Artículos sobre cirugías, síntomas, recuperación y cuidados: rinoplastia, várices, vasectomía, embarazo ectópico, próstata, lipoescultura y más." crumbs={[{ name: 'Blog', href: '/blog/' }]} type="CollectionPage">
+  <section class="hero"><div class="wrap"><span class="kicker">Blog</span><h1>Blog de salud y cirugía</h1><p class="lead">{list.length} artículos educativos. Para guías por cirugía con precios, visita las <a href="/guias/">guías</a>.</p></div></section>
+  <section><div class="wrap"><ul class="links">{list.map((p) => <li><a href={p.url}>{p.title}<small>{p.date.slice(0, 10)}</small></a></li>)}</ul></div></section>
+</Base>

@@ -1,0 +1,18 @@
+---
+// Tarjetas de cirujanos (E-E-A-T): CMP/RNE visibles solo cuando están confirmados.
+import { doctors, type Lang } from '../data/site';
+import { url } from '../lib/data';
+interface Props { lang: Lang; area?: string; all?: boolean }
+const { lang, area, all = false } = Astro.props;
+const list = all ? doctors : doctors.filter((d) => d.confirmed && (!area || d.areas.includes(area)));
+---
+<div class="docs">
+  {list.map((d) => (
+    <a class="doc" href={url.doctor(d.slug, lang)}>
+      <img src={d.photo} alt={d.name} width="96" height="96" loading="lazy">
+      <b>{d.name}</b>
+      {d.specialty && <span>{d.specialty[lang]}</span>}
+      {d.cmp && <span>CMP {d.cmp}{d.rne && ` · RNE ${d.rne}`}</span>}
+    </a>
+  ))}
+</div>

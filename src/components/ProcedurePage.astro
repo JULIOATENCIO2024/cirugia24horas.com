@@ -1,0 +1,179 @@
+---
+// Plantilla de PROCEDIMIENTO (sección 7 del BUILD), igual en ES y EN:
+// H1 + TL;DR extraíble → CTA doble → comparador por clínica (S/ y US$) → financiamiento → qué es / cómo se hace →
+// ¿soy candidato? → pacientes internacionales → riesgos y recuperación → cirujanos → FAQ → guías relacionadas.
+import Base from '../layouts/Base.astro';
+import PriceTable from './PriceTable.astro';
+import Faq from './Faq.astro';
+import Doctors from './Doctors.astro';
+import { site, pen, usd, waLink, type Lang } from '../data/site';
+import { procedures, procById, specById, type Faq as F } from '../data/catalog';
+import { priceRows, guideAt, guidesOf, wpFaqs, url, pages } from '../lib/data';
+import { orgId } from '../lib/schema';
+import { L } from '../lib/i18n';
+
+interface Props { id: string; lang: Lang }
+const { id, lang } = Astro.props;
+const s = L(lang);
+const p = procById(id);
+const sp = specById(p.specialty);
+const name = lang === 'es' ? p.es : p.en;
+const rows = priceRows(id, lang);
+const lo = rows[0], hi = rows[rows.length - 1];
+const g = (i: number) => guideAt(p.guide, i, lang);
+const about = p.own ? null : g(p.gi ?? 0);
+const how = p.own || (p.gi ?? 0) !== 0 ? null : g(1);
+const cand = g(4), risks = g(5), recov = g(6), intl = g(3);
+
+const tldr = lang === 'es'
+  ? `${p.es} en Lima cuesta desde ${pen(lo.price)} (≈ ${usd(lo.price)}) en ${lo.name} hasta ${pen(hi.price)} (≈ ${usd(hi.price)}) en ${hi.name}, según la clínica que elijas. El mismo equipo quirúrgico opera en todas las sedes; la evaluación inicial es sin costo y la indicación la define el especialista.`
+  : `${p.en} in Lima, Peru costs from ${usd(lo.price)} (${pen(lo.price)}) at ${lo.name} to ${usd(hi.price)} (${pen(hi.price)}) at ${hi.name}, depending on the clinic you choose. The same surgical team operates at every clinic; the initial evaluation is free and the specialist decides the indication.`;
+
+const short = lang === 'es' ? p.shortEs ?? p.es : p.en;
+const title = lang === 'es' ? `${short} en Lima: precio desde ${pen(lo.price)}` : `${p.en} in Peru: Cost from ${usd(lo.price)}`;
+const description = (lang === 'es'
+  ? `Precio de ${p.es.toLowerCase()} en ${rows.length} clínicas de Lima: desde ${pen(lo.price)} (≈ ${usd(lo.price)}) hasta ${pen(hi.price)}. Mismo equipo quirúrgico y evaluación sin costo.`
+  : `${p.en} cost in Peru at ${rows.length} clinics in Lima: from ${usd(lo.price)} to ${usd(hi.price)} (${pen(lo.price)}–${pen(hi.price)}). Same surgical team, free evaluation.`);
+
+const dedupe = (list: F[]) => list.filter((f, i) => list.findIndex((x) => x.q === f.q) === i);
+const faqs: F[] = dedupe(lang === 'es'
+  ? [...wpFaqs(id), ...(g(12)?.faqs ?? []), ...(g(2)?.faqs ?? [])]
+  : [...(p.own?.en.faqs ?? []), ...[0, 2, 3, 6, 12].flatMap((i) => g(i)?.faqs ?? [])]).slice(0, 10);
+
+const related = guidesOf(p.guide, lang);
+const siblings = procedures.filter((x) => x.specialty === p.specialty && x.id !== id);
+const pathEs = url.proc(p, 'es'), pathEn = url.proc(p, 'en');
+const wa = waLink(s.waProc(name));
+const crumbs = [
+  { name: lang === 'es' ? sp.es : sp.en, href: url.spec(sp.id, lang) },
+  { name, href: url.proc(p, lang) },
+];
+
+const procNode = {
+  '@type': 'MedicalProcedure',
+  '@id': `${site.url}${url.proc(p, lang)}#procedure`,
+  name,
+  alternateName: lang === 'es' ? p.en : p.es,
+  procedureType: 'https://schema.org/SurgicalProcedure',
+  howPerformed: (about?.tldr ?? p.own?.[lang].about ?? '').slice(0, 500),
+  relevantSpecialty: lang === 'es' ? sp.es : sp.en,
+};
+const service = {
+  '@type': 'Service',
+  '@id': `${site.url}${url.proc(p, lang)}#service`,
+  name: lang === 'es' ? `${p.es} en Lima, Perú` : `${p.en} in Lima, Peru`,
+  serviceType: name,
+  about: { '@id': procNode['@id'] },
+  provider: { '@id': orgId },
+  areaServed: [{ '@type': 'Country', name: 'Peru' }, { '@type': 'Place', name: 'Worldwide' }],
+  offers: {
+    '@type': 'AggregateOffer',
+    priceCurrency: 'PEN',
+    lowPrice: lo.price,
+    highPrice: hi.price,
+    offerCount: rows.length,
+    offers: rows.map((r) => ({
+      '@type': 'Offer',
+      name: `${name} · ${r.name}`,
+      price: r.price,
+      priceCurrency: 'PEN',
+      availability: 'https://schema.org/InStock',
+      seller: { '@type': 'MedicalClinic', name: r.name, address: { '@type': 'PostalAddress', addressLocality: r.district, addressRegion: 'Lima', addressCountry: 'PE' } },
+    })),
+  },
+};
+---
+<Base lang={lang} title={title} description={description} alt={{ es: pathEs, en: pathEn }} crumbs={crumbs} faqs={faqs} main={[procNode, service]} waMsg={s.waProc(name)}>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">{lang === 'es' ? sp.es : sp.en} · Lima, {lang === 'es' ? 'Perú' : 'Peru'}</span>
+      <h1>{lang === 'es' ? <>{p.es} en Lima: <span class="hl">precio desde {pen(lo.price)}</span></> : <>{p.en} in Peru: <span class="hl">cost from {usd(lo.price)}</span></>}</h1>
+      <p class="answer"><b>{s.tldr}:</b> {tldr}</p>
+      <div class="cta">
+        <a class="btn btn-wa" href={wa} data-cta="whatsapp" target="_blank" rel="noopener">{lang === 'es' ? 'Cotizar por WhatsApp' : 'Get a quote on WhatsApp'}</a>
+        <a class="btn btn-out" href="#precios">{s.seePrice}</a>
+      </div>
+      <div class="chips">
+        <span><b>{rows.length}</b> {lang === 'es' ? 'alternativas de clínica' : 'clinic options'}</span>
+        <span><b>{lang === 'es' ? 'Evaluación' : 'Evaluation'}</b> {lang === 'es' ? 'sin costo' : 'free'}</span>
+        <span><b>S/ + US$</b> {lang === 'es' ? 'precios en dos monedas' : 'prices in two currencies'}</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="precios">
+    <div class="wrap">
+      <h2>{lang === 'es' ? `Precio de ${p.es.toLowerCase()} por clínica` : `${p.en} cost by clinic`}</h2>
+      <p class="sub">{lang === 'es'
+        ? 'Mismo equipo médico, distintos entornos: compara precio, qué incluye y el respaldo de cada sede, y elige según tu caso y tu presupuesto.'
+        : 'Same medical team, different settings: compare price, what is included and the backing of each clinic, and choose according to your case and budget.'}</p>
+      <PriceTable proc={id} lang={lang} />
+      <div class="info">
+        <b>{s.financing}:</b> {lang === 'es'
+          ? <>puedes organizar el pago de tu cirugía con <a href={site.financing.url} target="_blank" rel="noopener">{site.financing.name}</a>. Pregúntanos por las condiciones al cotizar.</>
+          : <>patients in Peru can finance their surgery with <a href={site.financing.url} target="_blank" rel="noopener">{site.financing.name}</a>. International patients receive a written, itemized quote before traveling.</>}
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap split">
+      <div class="prose">
+        <h2>{lang === 'es' ? `¿Qué es ${p.es.toLowerCase().startsWith('cirug') ? 'la ' : ''}${p.es.toLowerCase()}?` : `What is ${p.en.toLowerCase().startsWith('d&c') ? 'a D&C' : p.en.toLowerCase()}?`}</h2>
+        {p.own ? <><p>{p.own[lang].about}</p><p>{p.own[lang].how}</p></> : <Fragment set:html={about?.bodyHtml} />}
+        {how && <Fragment set:html={how.bodyHtml} />}
+      </div>
+      <div class="panel">
+        <h2>{lang === 'es' ? '¿Soy candidato?' : 'Am I a candidate?'}</h2>
+        <p>{cand?.tldr ?? (lang === 'es' ? 'La indicación la define el especialista tras evaluar tu caso y tus exámenes.' : 'The specialist decides the indication after reviewing your case and tests.')}</p>
+        <div class="cta" style="margin-top:16px"><a class="btn btn-wa" href={wa} data-cta="whatsapp" target="_blank" rel="noopener">{lang === 'es' ? 'Enviar mis exámenes' : 'Send my medical records'}</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div class="prose">
+        <h2>{lang === 'es' ? 'Si vienes del extranjero' : 'Coming from abroad'}</h2>
+        <p>{intl?.tldr ?? (lang === 'es'
+          ? 'Evaluamos tu caso a distancia, coordinamos exámenes, clínica, traslados y alojamiento, y te damos seguimiento cuando vuelves a tu país.'
+          : 'We review your case remotely, coordinate tests, clinic, transfers and lodging, and follow up with you once you are back home.')}</p>
+        <p><a href={pages.international[lang]}>{lang === 'es' ? 'Cómo funciona para pacientes internacionales →' : 'How it works for international patients →'}</a></p>
+      </div>
+      <div class="prose">
+        <h2>{lang === 'es' ? 'Riesgos y recuperación' : 'Risks and recovery'}</h2>
+        {risks && <p>{risks.tldr}</p>}
+        {recov && <p>{recov.tldr}</p>}
+        {!risks && <p>{lang === 'es' ? 'Como toda cirugía, tiene riesgos que el especialista te explica en la consulta. La recuperación depende de la técnica y de tu caso.' : 'Like any surgery it carries risks, which the specialist explains during the consultation. Recovery depends on the technique and your case.'}</p>}
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>{s.surgeons}</h2>
+      <p class="sub">{lang === 'es' ? 'Médicos colegiados en el Colegio Médico del Perú (CMP) con registro de especialista (RNE).' : 'Doctors licensed by the Peruvian Medical Association (CMP) with specialist registration (RNE).'}</p>
+      <Doctors lang={lang} area={p.specialty} />
+    </div>
+  </section>
+
+  <Faq faqs={faqs} title={s.faq} />
+
+  {related.length > 0 && (
+    <section class="alt">
+      <div class="wrap">
+        <h2>{s.related}</h2>
+        <ul class="links">{related.map((x) => <li><a href={url.guide(x, lang)}>{x.title}</a></li>)}</ul>
+      </div>
+    </section>
+  )}
+
+  {siblings.length > 0 && (
+    <section>
+      <div class="wrap">
+        <h2>{lang === 'es' ? `Otras cirugías de ${sp.es.toLowerCase()}` : `Other ${sp.en.toLowerCase()} procedures`}</h2>
+        <ul class="links">{siblings.map((x) => <li><a href={url.proc(x, lang)}>{lang === 'es' ? x.es : x.en}</a></li>)}</ul>
+      </div>
+    </section>
+  )}
+</Base>

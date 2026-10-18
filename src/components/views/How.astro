@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import { waLink, type Lang } from '../../data/site';
+import { pages } from '../../lib/data';
+import { L } from '../../lib/i18n';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = L(lang);
+const es = lang === 'es';
+const title = es ? 'Cómo funciona: de la evaluación a tu cirugía | Cirugía 24 Horas' : 'How It Works: From Evaluation to Surgery | Cirugía 24 Horas';
+const description = es
+  ? 'Evaluación sin costo, cotización cerrada por clínica, cirugía con el mismo equipo y seguimiento hasta el alta. Así coordinamos tu cirugía en Lima.'
+  : 'Free evaluation, fixed quote by clinic, surgery with the same team and follow-up until discharge. This is how we coordinate your surgery in Lima, Peru.';
+const steps = es ? [
+  ['Nos escribes', 'Por WhatsApp, teléfono o correo. Cuéntanos tu diagnóstico y, si los tienes, envía tus exámenes.'],
+  ['Evaluación del caso', 'Un especialista revisa tu diagnóstico e identifica qué cirugía corresponde. La evaluación inicial no tiene costo.'],
+  ['Alternativas y cotización', 'Te mostramos las clínicas que aplican a tu caso, con precio, qué incluye y tiempos. El presupuesto se entrega cerrado y por escrito.'],
+  ['Eliges la clínica', 'Decides según tu presupuesto, tu urgencia y la comodidad que buscas. El cirujano es el mismo en todas.'],
+  ['Preoperatorio y cirugía', 'Coordinamos exámenes, consulta, sala y fecha. Te acompañamos el día de la cirugía.'],
+  ['Seguimiento', 'Coordinamos tus controles con el cirujano que te operó y respondemos tus dudas hasta el alta médica definitiva.'],
+] : [
+  ['You message us', 'On WhatsApp, by phone or email. Tell us your diagnosis and send your test results if you have them.'],
+  ['Case evaluation', 'A specialist reviews your diagnosis and identifies the right procedure. The initial evaluation is free.'],
+  ['Options and quote', 'We show you the clinics that fit your case, with price, inclusions and timing. You receive a fixed, written quote.'],
+  ['You choose the clinic', 'Decide based on your budget, urgency and the comfort you want. The surgeon is the same at every clinic.'],
+  ['Pre-op and surgery', 'We coordinate tests, consultation, operating room and date, and support you on the day of surgery.'],
+  ['Follow-up', 'We coordinate check-ups with the surgeon who operated on you and answer your questions until final discharge.'],
+];
+const howTo = {
+  '@type': 'HowTo',
+  name: es ? 'Cómo operarte con Cirugía 24 Horas' : 'How to have surgery with Cirugía 24 Horas',
+  step: steps.map(([n, t], i) => ({ '@type': 'HowToStep', position: i + 1, name: n, text: t })),
+};
+---
+<Base lang={lang} title={title} description={description} alt={pages.how} crumbs={[{ name: s.how, href: pages.how[lang] }]} main={[howTo]}>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">{s.how}</span>
+      <h1>{es ? 'De tu primer mensaje al alta médica' : 'From your first message to final discharge'}</h1>
+      <p class="lead">{es
+        ? 'Funcionamos como tu referente durante todo el proceso: evaluamos tu diagnóstico, identificamos qué cirugía corresponde y te orientamos a la clínica de la red que mejor responde a tu caso y a tu presupuesto.'
+        : 'We act as your point of contact throughout: we review your diagnosis, identify the right procedure and guide you to the partner clinic that best fits your case and budget.'}</p>
+      <div class="cta"><a class="btn btn-wa" href={waLink(s.waGeneric)} data-cta="whatsapp" target="_blank" rel="noopener">{es ? 'Empezar por WhatsApp' : 'Start on WhatsApp'}</a></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="steps">{steps.map(([b, t]) => <div class="step"><div><b>{b}</b><p>{t}</p></div></div>)}</div>
+      <div class="info">{es
+        ? <>¿Vives fuera del Perú? Mira <a href={pages.international.es}>cómo funciona para pacientes internacionales</a>: evaluación a distancia, viaje, alojamiento y seguimiento.</>
+        : <>Live outside Peru? See <a href={pages.international.en}>how it works for international patients</a>: remote evaluation, travel, lodging and follow-up.</>}</div>
+    </div>
+  </section>
+</Base>

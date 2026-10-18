@@ -1,0 +1,67 @@
+---
+// Tabla maestra de precios: todos los procedimientos × clínica (desde / hasta), en S/ y US$. Pensada para que
+// buscadores y asistentes de IA citen un dato verificable por procedimiento.
+import Base from '../../layouts/Base.astro';
+import { site, pen, usd, type Lang } from '../../data/site';
+import { procedures, specialties } from '../../data/catalog';
+import { priceRows, url, pages } from '../../lib/data';
+import { L } from '../../lib/i18n';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const s = L(lang);
+const es = lang === 'es';
+const nm = (x: { es: string; en: string }) => (es ? x.es : x.en);
+const title = es ? 'Precios de cirugías en Lima por clínica (S/ y US$) | Cirugía 24 Horas' : 'Surgery Prices in Peru by Clinic (US$ and S/) | Cirugía 24 Horas';
+const description = es
+  ? 'Tabla de precios de más de 30 cirugías en Lima: desde y hasta por clínica, en soles y en dólares (US$ 1 = S/ 3.50). Evaluación sin costo.'
+  : 'Price table for 30+ surgeries in Lima, Peru: lowest and highest cost by clinic, in US dollars and soles (US$ 1 = S/ 3.50). Free evaluation.';
+const table = {
+  '@type': 'Dataset',
+  name: es ? 'Precios de cirugías por clínica en Lima' : 'Surgery prices by clinic in Lima, Peru',
+  description,
+  creator: { '@id': `${site.url}/#organization` },
+  dateModified: site.fx.date,
+  variableMeasured: es ? 'Precio desde y hasta en PEN y USD' : 'Lowest and highest price in PEN and USD',
+  url: `${site.url}${pages.prices[lang]}`,
+  license: `${site.url}${pages.terms[lang]}`,
+};
+---
+<Base lang={lang} title={title} description={description} alt={pages.prices} crumbs={[{ name: s.prices, href: pages.prices[lang] }]} main={[table]}>
+  <section class="hero">
+    <div class="wrap">
+      <span class="kicker">{s.prices} · {site.fx.date}</span>
+      <h1>{es ? 'Precios de cirugías en Lima por clínica' : 'Surgery prices in Peru by clinic'}</h1>
+      <p class="answer"><b>{s.tldr}:</b> {es
+        ? 'Cada procedimiento tiene hasta cinco alternativas de clínica. El precio "desde" corresponde a la sede de menor costo y el "hasta" a la premium; en cada página ves qué incluye cada opción.'
+        : 'Each procedure has up to five clinic options. The "from" price is the lowest-cost clinic and the "to" price is the premium clinic; each procedure page shows what every option includes.'}</p>
+    </div>
+  </section>
+  {specialties.map((sp) => (
+    <section>
+      <div class="wrap">
+        <h2>{nm(sp)}</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">{es ? 'Procedimiento' : 'Procedure'}</th><th scope="col">{s.from}</th><th scope="col">{es ? 'Hasta' : 'To'}</th><th scope="col">{es ? 'Clínicas' : 'Clinics'}</th></tr></thead>
+            <tbody>
+              {procedures.filter((p) => p.specialty === sp.id).map((p) => {
+                const r = priceRows(p.id, lang);
+                const lo = r[0], hi = r[r.length - 1];
+                return (
+                  <tr>
+                    <td><a href={url.proc(p, lang)}><b>{nm(p)}</b></a></td>
+                    <td class="pr">{es ? pen(lo.price) : usd(lo.price)}<small>{es ? `≈ ${usd(lo.price)}` : pen(lo.price)}</small><span class="lvl">{lo.name}</span></td>
+                    <td class="pr">{es ? pen(hi.price) : usd(hi.price)}<small>{es ? `≈ ${usd(hi.price)}` : pen(hi.price)}</small><span class="lvl">{hi.name}</span></td>
+                    <td>{r.length}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  ))}
+  <section><div class="wrap"><p class="note">{s.fxNote(site.fx.usd, site.fx.date)} {s.priceNote}</p></div></section>
+</Base>

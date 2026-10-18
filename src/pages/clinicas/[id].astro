@@ -1,0 +1,6 @@
+---
+import V from '../../components/views/Clinics.astro';
+import { clinics } from '../../data/site';
+export function getStaticPaths() { return clinics.filter((c) => c.main).map((c) => ({ params: { id: c.id } })); }
+---
+<V lang="es" id={Astro.params.id} />
